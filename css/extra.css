@@ -1,0 +1,14 @@
+/* 深色 Footer 增强 */
+footer {
+    background-color: #0f172a !important;
+    color: #cbd5e1 !important;
+    padding: 2rem 0;
+    border-top: 1px solid #1e293b;
+}
+footer a {
+    color: #5eead4 !important;
+}
+footer a:hover {
+    color: #2dd4bf !important;
+    text-decoration: none;
+}
