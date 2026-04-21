@@ -2,126 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.getwage.xyz/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/course_intro/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/courses_intro/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
+    </url>
+    <url>
+         <loc>https://www.getwage.xyz/courses/apply_py/Pandas/</loc>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/apply_py/first/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/apply_py/forth_numpy/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/apply_py/second/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/apply_py/third/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/c3/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/first/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/second/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/third_1/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/10_pandas_groupby/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/11_pandas_pivot/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/12_pandas_string/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/13_timeseries/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/1_pandas_intro/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/2_pandas_begin/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/3_pandas_IO/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/4_pandas_structures/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/5_pandas_cal/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/6_pandas_loss/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/7_pandas_hiindex/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/8_pandas_concate/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/9_pandas_merge/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/pandas/team/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/visual/Pandas_v/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/visual/init/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/courses/multi_variance/visual/visual/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/python/1_Python_intro/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/python/basic_gram/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
     <url>
          <loc>https://www.getwage.xyz/python/numpy_intro/</loc>
-         <lastmod>2026-04-19</lastmod>
+         <lastmod>2026-04-21</lastmod>
     </url>
 </urlset>
