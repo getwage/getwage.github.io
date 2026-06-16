@@ -12,13 +12,13 @@
         <meta name="author" content="Getwage">
       
       
-        <link rel="canonical" href="https://www.getwage.xyz/courses/multi_variance/Comprehensive_Evaluation/AHP/">
+        <link rel="canonical" href="https://www.getwage.xyz/courses/multi_variance/glm/ANOVA/">
       
       
-        <link rel="prev" href="../Comp-Eva/">
+        <link rel="prev" href="../../regress/Textbook_reg/">
       
       
-        <link rel="next" href="../Entropy/">
+        <link rel="next" href="../GLM/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>层次分析法（AHP）机理方法 - 数字经济与数据科学讲义</title>
+        <title>方差分析 - 数字经济与数据科学讲义</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ahp" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              层次分析法（AHP）机理方法
+              方差分析
             
           </span>
         </div>
@@ -4377,8 +4377,6 @@
                 
   
   
-    
-  
   
   
     
@@ -4391,11 +4389,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_9" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_3_9" >
         
           
           <label class="md-nav__link" for="__nav_9_3_9" id="__nav_9_3_9_label" tabindex="0">
@@ -4416,7 +4416,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9_3_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -4434,7 +4434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Comp-Eva/" class="md-nav__link">
+      <a href="../../Comprehensive_Evaluation/Comp-Eva/" class="md-nav__link">
         
   
   
@@ -4459,37 +4459,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    层次分析法（AHP）机理方法
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Comprehensive_Evaluation/AHP/" class="md-nav__link">
         
   
   
@@ -4505,215 +4478,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ahp_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一、AHP 的核心数学机制（简要）
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ahp_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二、方法一：基于最大特征值的标准 AHP（最经典）
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="二、方法一：基于最大特征值的标准 AHP（最经典）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 函数实现
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 一致性检验函数
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 内部机制说明
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        三、方法二：几何平均法（计算快、稳定）
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="三、方法二：几何平均法（计算快、稳定）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 函数实现
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 内部机制说明
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        四、方法三：列和归一化法（简化版）
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四、方法三：列和归一化法（简化版）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 函数实现
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 内部机制说明
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        五、方法四：面向对象封装（工程级写法）
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="五、方法四：面向对象封装（工程级写法）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ahp_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ AHP 类
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 使用示例
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        六、四种方法对比总结
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4726,7 +4490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Entropy/" class="md-nav__link">
+      <a href="../../Comprehensive_Evaluation/Entropy/" class="md-nav__link">
         
   
   
@@ -5051,8 +4815,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -5063,13 +4829,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_3_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_3_12" checked>
         
           
           <label class="md-nav__link" for="__nav_9_3_12" id="__nav_9_3_12_label" tabindex="0">
@@ -5090,7 +4854,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_12_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_3_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9_3_12">
             <span class="md-nav__icon md-icon"></span>
             
@@ -5105,10 +4869,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../glm/ANOVA/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    方差分析
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -5124,6 +4915,376 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单因素方差分析的实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="单因素方差分析的实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方差分析基本概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方差分析基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 什么是方差分析？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 适用条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        单因素方差分析步骤
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="单因素方差分析步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 提出假设
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 计算F统计量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 决策规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引入问题1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="引入问题1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 原假设与备择假设
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 核心思想
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多因素方差分析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="多因素方差分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 数学模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 总变异的分解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 假设检验
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 假设检验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 主效应检验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 交互效应检验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 决策规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 交互效应的解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 前提条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 实例分析（双因素）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 实例分析（双因素）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        数据：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引入并细化上述问题2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多因素方差分析中代码输出说明​
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ​关键解释​
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ​注意事项​
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5136,7 +5297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../glm/GLM/" class="md-nav__link">
+      <a href="../GLM/" class="md-nav__link">
         
   
   
@@ -5164,7 +5325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../glm/GLM_Textbook.ipynb" class="md-nav__link">
+      <a href="../GLM_Textbook.ipynb" class="md-nav__link">
         
   
   
@@ -5353,55 +5514,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ahp_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一、AHP 的核心数学机制（简要）
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ahp_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二、方法一：基于最大特征值的标准 AHP（最经典）
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="二、方法一：基于最大特征值的标准 AHP（最经典）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 函数实现
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 一致性检验函数
+        单因素方差分析的实践
       
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="单因素方差分析的实践">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 内部机制说明
+        方差分析基本概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方差分析基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 什么是方差分析？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 适用条件
       
     </span>
   </a>
@@ -5412,35 +5563,246 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        三、方法二：几何平均法（计算快、稳定）
+        单因素方差分析步骤
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="三、方法二：几何平均法（计算快、稳定）">
+    <nav class="md-nav" aria-label="单因素方差分析步骤">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 函数实现
+        (1) 提出假设
       
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#2-f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 计算F统计量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 决策规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引入问题1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="引入问题1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 原假设与备择假设
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 核心思想
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        多因素方差分析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="多因素方差分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 数学模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 总变异的分解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 假设检验
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 假设检验">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 主效应检验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 交互效应检验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 决策规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 交互效应的解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 前提条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 实例分析（双因素）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 实例分析（双因素）">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 内部机制说明
+        数据：
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤：
       
     </span>
   </a>
@@ -5451,24 +5813,23 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        四、方法三：列和归一化法（简化版）
+        引入并细化上述问题2
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="四、方法三：列和归一化法（简化版）">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 函数实现
+        多因素方差分析中代码输出说明​
       
     </span>
   </a>
@@ -5479,46 +5840,18 @@
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 内部机制说明
+        ​关键解释​
       
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        五、方法四：面向对象封装（工程级写法）
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="五、方法四：面向对象封装（工程级写法）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ahp_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ AHP 类
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ 使用示例
+        ​注意事项​
       
     </span>
   </a>
@@ -5527,17 +5860,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        六、四种方法对比总结
-      
-    </span>
-  </a>
   
 </li>
       
@@ -5993,59 +6315,74 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </style>
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=12e720e3-7616-45ee-a0d1-93a124791d35">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d2cc13a3-2697-4450-8c89-36ca894e3fc5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="ahp">层次分析法（AHP）机理方法<a class="anchor-link" href="#ahp">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c8fc2848-adcf-424f-888d-63814dd00fae">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="ahp">一、AHP 的核心数学机制（简要）<a class="anchor-link" href="#ahp">¶</a></h2><ol>
-<li><strong>判断矩阵 A</strong>：<br/>
-满足 $a_{ij} = 1/a_{ji}$，且 $a_{ii}=1$</li>
-<li><strong>权重向量 w</strong>：<br/>
-常用方法：<ul>
-<li>最大特征值法（Eigenvalue Method）</li>
-<li>几何平均法（Geometric Mean）</li>
+<h1 id="">方差分析<a class="anchor-link" href="#">¶</a></h1><h2 id="">单因素方差分析的实践<a class="anchor-link" href="#">¶</a></h2><h3 id=""><strong>方差分析基本概念</strong><a class="anchor-link" href="#">¶</a></h3><h4 id="1"><strong>(1) 什么是方差分析？</strong><a class="anchor-link" href="#1">¶</a></h4><ul>
+<li>用于比较<strong>三个或更多总体均值</strong>是否相等的统计方法。</li>
+<li>核心思想：通过分解数据的总变异（Total Variation）为<strong>组间变异</strong>和<strong>组内变异</strong>，判断组间差异是否显著。</li>
 </ul>
-</li>
-<li><strong>一致性检验</strong>：</li>
-</ol>
-<p>$$
-   CI=\frac{\lambda_{\max}-n}{n-1},\quad CR=\frac{CI}{RI}
-   $$
-   若 $CR&lt;0.1$，一致性可接受。</p>
+<h4 id="2"><strong>(2) 适用条件</strong><a class="anchor-link" href="#2">¶</a></h4><ul>
+<li><strong>独立性</strong>：各组数据相互独立。</li>
+<li><strong>正态性</strong>：各组数据近似服从正态分布。</li>
+<li><strong>方差齐性</strong>：各组的方差相等（可通过Levene检验验证）。著影响学生成绩？</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=876a424d-b26e-4f29-aa26-1312d12f7406">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=47a37bc9-05c9-4f56-b1f8-ebd6bb2449c2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="ahp">二、方法一：基于最大特征值的标准 AHP（最经典）<a class="anchor-link" href="#ahp">¶</a></h2><h3 id="">✅ 函数实现<a class="anchor-link" href="#">¶</a></h3>
+<h3 id=""><strong>单因素方差分析步骤</strong><a class="anchor-link" href="#">¶</a></h3><h4 id="1"><strong>(1) 提出假设</strong><a class="anchor-link" href="#1">¶</a></h4><ul>
+<li><strong>原假设（H₀）</strong>：所有组的均值相等（μ₁=μ₂=μ₃）。</li>
+<li><strong>备择假设（H₁）</strong>：至少有一组均值不同。</li>
+</ul>
+<h4 id="2-f"><strong>(2) 计算F统计量</strong><a class="anchor-link" href="#2-f">¶</a></h4>$$
+F = \frac{\text{组间方差（MSB）}}{\text{组内方差（MSW）}} = \frac{SSB/(k-1)}{SSW/(N-k)}
+$$<ul>
+<li><strong>SSB</strong>（组间平方和）：各组均值与总均值的差异。</li>
+<li><strong>SSW</strong>（组内平方和）：各组内部数据与组均值的差异。</li>
+<li><strong>k</strong>：组数，<strong>N</strong>：总样本量。</li>
+</ul>
+<h4 id="3"><strong>(3) 决策规则</strong><a class="anchor-link" href="#3">¶</a></h4><ul>
+<li>若 <strong>F &gt; F临界值</strong> 或 <strong>p值 &lt; α（如0.05）</strong>，拒绝H₀。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e18c46f4-ec22-4301-8436-858b45409e5c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1"><strong>引入问题1</strong><a class="anchor-link" href="#1">¶</a></h3><p><strong>案例背景</strong>：<br/>
+某教育机构研究三种不同教学方法（A、B、C）对学生数学成绩的影响，每组随机分配10名学生。数据如下：</p>
+<ul>
+<li>方法A：78, 82, 75, 85, 80, 88, 76, 84, 79, 81</li>
+<li>方法B：85, 88, 90, 84, 87, 92, 89, 86, 91, 83</li>
+<li>方法C：70, 72, 68, 75, 74, 71, 73, 69, 77, 76</li>
+</ul>
+<p><strong>问题</strong>：<br/>
+不同教学方法是否显著影响学生成绩？</p>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=73caaebb-3bf2-4ba0-8e7f-e1e72e436b0d">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=85a6354d-c36c-4a63-aba0-93577a5dea05">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -6058,68 +6395,37 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#导入需要的包文件</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">stats</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.formula.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">ols</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.stats.anova</span><span class="w"> </span><span class="kn">import</span> <span class="n">anova_lm</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">ahp_eigen</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">"""</span>
-<span class="sd">    使用最大特征值法计算权重</span>
-<span class="sd">    """</span>
-    <span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-    <span class="c1"># 特征值分解</span>
-    <span class="n">eigvals</span><span class="p">,</span> <span class="n">eigvecs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
-    <span class="n">max_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">eigvals</span><span class="o">.</span><span class="n">real</span><span class="p">)</span>
-    <span class="n">w</span> <span class="o">=</span> <span class="n">eigvecs</span><span class="p">[:,</span> <span class="n">max_index</span><span class="p">]</span><span class="o">.</span><span class="n">real</span>
-    <span class="n">w</span> <span class="o">=</span> <span class="n">w</span> <span class="o">/</span> <span class="n">w</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-
-    <span class="c1"># 最大特征值</span>
-    <span class="n">lambda_max</span> <span class="o">=</span> <span class="n">eigvals</span><span class="p">[</span><span class="n">max_index</span><span class="p">]</span><span class="o">.</span><span class="n">real</span>
-
-    <span class="k">return</span> <span class="n">w</span><span class="p">,</span> <span class="n">lambda_max</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">'font.sans-serif'</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="s1">'SimHei'</span><span class="p">];</span>  <span class="c1">#设置中文字体为黑体</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">'axes.unicode_minus'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>   <span class="c1">#负号显式正常</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">import numpy as np
+<div class="clipboard-copy-txt" id="cell-1">#导入需要的包文件
+import pandas as pd
+import scipy.stats as stats
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
 
-def ahp_eigen(matrix):
-    """
-    使用最大特征值法计算权重
-    """
-    matrix = np.array(matrix, dtype=float)
-    n = matrix.shape[0]
 
-    # 特征值分解
-    eigvals, eigvecs = np.linalg.eig(matrix)
-    max_index = np.argmax(eigvals.real)
-    w = eigvecs[:, max_index].real
-    w = w / w.sum()
-
-    # 最大特征值
-    lambda_max = eigvals[max_index].real
-
-    return w, lambda_max</div>
+plt.rcParams['font.sans-serif']=['SimHei'];  #设置中文字体为黑体
+plt.rcParams['axes.unicode_minus'] = False   #负号显式正常</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b6935b4c-9f25-461b-956d-5205577c4930">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="">✅ 一致性检验函数<a class="anchor-link" href="#">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0470a861-da87-4cd2-8ca8-b7ca07e6396d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bb584f9d-b058-415a-b7a8-032514718861">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
@@ -6132,220 +6438,224 @@ def ahp_eigen(matrix):
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">consistency_check</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">lambda_max</span><span class="p">):</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
-    <span class="n">RI_dict</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="mi">1</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="mf">0.58</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="mf">0.90</span><span class="p">,</span>
-        <span class="mi">5</span><span class="p">:</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="mf">1.24</span><span class="p">,</span> <span class="mi">7</span><span class="p">:</span> <span class="mf">1.32</span><span class="p">,</span>
-        <span class="mi">8</span><span class="p">:</span> <span class="mf">1.41</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span> <span class="mf">1.45</span>
-    <span class="p">}</span>
-    <span class="n">CI</span> <span class="o">=</span> <span class="p">(</span><span class="n">lambda_max</span> <span class="o">-</span> <span class="n">n</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">CR</span> <span class="o">=</span> <span class="n">CI</span> <span class="o">/</span> <span class="n">RI_dict</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">CI</span><span class="p">,</span> <span class="n">CR</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 创建数据框</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'Method'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'A'</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span> <span class="o">+</span> <span class="p">[</span><span class="s1">'B'</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span> <span class="o">+</span> <span class="p">[</span><span class="s1">'C'</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span>
+    <span class="s1">'Score'</span><span class="p">:</span> <span class="p">[</span><span class="mi">78</span><span class="p">,</span><span class="mi">82</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">85</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="mi">76</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">79</span><span class="p">,</span><span class="mi">81</span><span class="p">,</span>
+              <span class="mi">85</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">87</span><span class="p">,</span><span class="mi">92</span><span class="p">,</span><span class="mi">89</span><span class="p">,</span><span class="mi">86</span><span class="p">,</span><span class="mi">91</span><span class="p">,</span><span class="mi">83</span><span class="p">,</span>
+              <span class="mi">70</span><span class="p">,</span><span class="mi">72</span><span class="p">,</span><span class="mi">68</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">71</span><span class="p">,</span><span class="mi">73</span><span class="p">,</span><span class="mi">69</span><span class="p">,</span><span class="mi">77</span><span class="p">,</span><span class="mi">76</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">df</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">def consistency_check(matrix, lambda_max):
-    n = len(matrix)
-    RI_dict = {
-        1: 0, 2: 0, 3: 0.58, 4: 0.90,
-        5: 1.12, 6: 1.24, 7: 1.32,
-        8: 1.41, 9: 1.45
+<div class="clipboard-copy-txt" id="cell-2"># 创建数据框
+data = {
+    'Method': ['A']*10 + ['B']*10 + ['C']*10,
+    'Score': [78,82,75,85,80,88,76,84,79,81,
+              85,88,90,84,87,92,89,86,91,83,
+              70,72,68,75,74,71,73,69,77,76]
+}
+df = pd.DataFrame(data)
+df</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
-    CI = (lambda_max - n) / (n - 1)
-    CR = CI / RI_dict[n]
-    return CI, CR</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=68d0f4ca-e4ad-43b8-b950-7c49832305c9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="">✅ 内部机制说明<a class="anchor-link" href="#">¶</a></h3><ul>
-<li><code>np.linalg.eig</code> 求解主特征向量 → 归一化后即为权重</li>
-<li>数学依据：<strong>Perron–Frobenius 定理</strong></li>
-<li>适用于理论严谨、学术研究场景</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bc0d96be-4238-4091-92e2-19b44bc1072d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="">三、方法二：几何平均法（计算快、稳定）<a class="anchor-link" href="#">¶</a></h2><h3 id="">✅ 函数实现<a class="anchor-link" href="#">¶</a></h3><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ahp_geometric_mean</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">"""</span>
-<span class="sd">    几何平均法计算权重</span>
-<span class="sd">    """</span>
-    <span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-    <span class="c1"># 每一行几何平均</span>
-    <span class="n">geo_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">matrix</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-    <span class="n">weights</span> <span class="o">=</span> <span class="n">geo_mean</span> <span class="o">/</span> <span class="n">geo_mean</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-    <span class="k">return</span> <span class="n">weights</span>
-</pre></div>
-<h3 id="">✅ 内部机制说明<a class="anchor-link" href="#">¶</a></h3><ul>
-<li>对判断矩阵按行取几何平均：
-$$
-w_i = \frac{\left(\prod_j a_{ij}\right)^{1/n}}{\sum_k \left(\prod_j a_{kj}\right)^{1/n}}
-$$</li>
-<li>优点：<ul>
-<li>无需特征值计算</li>
-<li>数值稳定性好</li>
-</ul>
-</li>
-<li>缺点：<ul>
-<li>理论上不如特征值法严谨</li>
-</ul>
-</li>
-</ul>
-<p>✅ <strong>工程推荐</strong></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1bd3f3be-fdb6-4702-8038-11402ec9274e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="">四、方法三：列和归一化法（简化版）<a class="anchor-link" href="#">¶</a></h2><h3 id="">✅ 函数实现<a class="anchor-link" href="#">¶</a></h3><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ahp_column_norm</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">"""</span>
-<span class="sd">    列归一化 + 行平均</span>
-<span class="sd">    """</span>
-    <span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
-    <span class="n">col_sum</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">norm_matrix</span> <span class="o">=</span> <span class="n">matrix</span> <span class="o">/</span> <span class="n">col_sum</span>
-    <span class="n">weights</span> <span class="o">=</span> <span class="n">norm_matrix</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">weights</span>
-</pre></div>
-<h3 id="">✅ 内部机制说明<a class="anchor-link" href="#">¶</a></h3><ul>
-<li>将判断矩阵按列归一化</li>
-<li>再对每一行求平均</li>
-<li>本质是 <strong>特征向量法的近似</strong></li>
-<li>适合教学或快速原型</li>
-</ul>
-<hr/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9c1b1a3b-ce7d-410a-ac4f-81ee1c222bbe">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="">五、方法四：面向对象封装（工程级写法）<a class="anchor-link" href="#">¶</a></h2><h3 id="ahp">✅ AHP 类<a class="anchor-link" href="#ahp">¶</a></h3><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">AHP</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">matrix</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">weights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">"eigen"</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">"eigen"</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_eigen</span><span class="p">()</span>
-        <span class="k">elif</span> <span class="n">method</span> <span class="o">==</span> <span class="s2">"geo"</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_geometric</span><span class="p">()</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Unknown method"</span><span class="p">)</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">_eigen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">eigvals</span><span class="p">,</span> <span class="n">eigvecs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">)</span>
-        <span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">eigvals</span><span class="o">.</span><span class="n">real</span><span class="p">)</span>
-        <span class="n">w</span> <span class="o">=</span> <span class="n">eigvecs</span><span class="p">[:,</span> <span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">real</span>
-        <span class="k">return</span> <span class="n">w</span> <span class="o">/</span> <span class="n">w</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">_geometric</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">gm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">A</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-        <span class="k">return</span> <span class="n">gm</span> <span class="o">/</span> <span class="n">gm</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">check_consistency</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">w</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_eigen</span><span class="p">()</span>
-        <span class="n">Aw</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">A</span> <span class="o">@</span> <span class="n">w</span>
-        <span class="n">lambda_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">Aw</span> <span class="o">/</span> <span class="n">w</span><span class="p">)</span>
-        <span class="n">CI</span> <span class="o">=</span> <span class="p">(</span><span class="n">lambda_max</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="n">RI</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.58</span><span class="p">,</span> <span class="mf">0.90</span><span class="p">,</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mf">1.24</span><span class="p">,</span> <span class="mf">1.32</span><span class="p">,</span> <span class="mf">1.41</span><span class="p">,</span> <span class="mf">1.45</span><span class="p">][</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">CI</span><span class="p">,</span> <span class="n">CI</span> <span class="o">/</span> <span class="n">RI</span>
-</pre></div>
-<h3 id="">✅ 使用示例<a class="anchor-link" href="#">¶</a></h3><div class="highlight"><pre><span></span><span class="n">matrix</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="p">]</span>
-
-<span class="n">ahp</span> <span class="o">=</span> <span class="n">AHP</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
-<span class="n">w</span> <span class="o">=</span> <span class="n">ahp</span><span class="o">.</span><span class="n">weights</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">"geo"</span><span class="p">)</span>
-<span class="n">CI</span><span class="p">,</span> <span class="n">CR</span> <span class="o">=</span> <span class="n">ahp</span><span class="o">.</span><span class="n">check_consistency</span><span class="p">()</span>
-</pre></div>
-<hr/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3c24dea5-3c93-4975-a1b4-c83d1be9ab6b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="">六、四种方法对比总结<a class="anchor-link" href="#">¶</a></h2><table>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
 <thead>
-<tr>
-<th>方法</th>
-<th>精度</th>
-<th>速度</th>
-<th>适用场景</th>
+<tr style="text-align: right;">
+<th></th>
+<th>Method</th>
+<th>Score</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>特征值法</td>
-<td>⭐⭐⭐⭐</td>
-<td>⭐⭐</td>
-<td>学术、严格建模</td>
+<th>0</th>
+<td>A</td>
+<td>78</td>
 </tr>
 <tr>
-<td>几何平均</td>
-<td>⭐⭐⭐⭐</td>
-<td>⭐⭐⭐⭐</td>
-<td>工程实践（推荐）</td>
+<th>1</th>
+<td>A</td>
+<td>82</td>
 </tr>
 <tr>
-<td>列和归一化</td>
-<td>⭐⭐⭐</td>
-<td>⭐⭐⭐⭐</td>
-<td>教学、快速验证</td>
+<th>2</th>
+<td>A</td>
+<td>75</td>
 </tr>
 <tr>
-<td>OOP 封装</td>
-<td>⭐⭐⭐⭐</td>
-<td>⭐⭐⭐</td>
-<td>大型项目</td>
+<th>3</th>
+<td>A</td>
+<td>85</td>
+</tr>
+<tr>
+<th>4</th>
+<td>A</td>
+<td>80</td>
+</tr>
+<tr>
+<th>5</th>
+<td>A</td>
+<td>88</td>
+</tr>
+<tr>
+<th>6</th>
+<td>A</td>
+<td>76</td>
+</tr>
+<tr>
+<th>7</th>
+<td>A</td>
+<td>84</td>
+</tr>
+<tr>
+<th>8</th>
+<td>A</td>
+<td>79</td>
+</tr>
+<tr>
+<th>9</th>
+<td>A</td>
+<td>81</td>
+</tr>
+<tr>
+<th>10</th>
+<td>B</td>
+<td>85</td>
+</tr>
+<tr>
+<th>11</th>
+<td>B</td>
+<td>88</td>
+</tr>
+<tr>
+<th>12</th>
+<td>B</td>
+<td>90</td>
+</tr>
+<tr>
+<th>13</th>
+<td>B</td>
+<td>84</td>
+</tr>
+<tr>
+<th>14</th>
+<td>B</td>
+<td>87</td>
+</tr>
+<tr>
+<th>15</th>
+<td>B</td>
+<td>92</td>
+</tr>
+<tr>
+<th>16</th>
+<td>B</td>
+<td>89</td>
+</tr>
+<tr>
+<th>17</th>
+<td>B</td>
+<td>86</td>
+</tr>
+<tr>
+<th>18</th>
+<td>B</td>
+<td>91</td>
+</tr>
+<tr>
+<th>19</th>
+<td>B</td>
+<td>83</td>
+</tr>
+<tr>
+<th>20</th>
+<td>C</td>
+<td>70</td>
+</tr>
+<tr>
+<th>21</th>
+<td>C</td>
+<td>72</td>
+</tr>
+<tr>
+<th>22</th>
+<td>C</td>
+<td>68</td>
+</tr>
+<tr>
+<th>23</th>
+<td>C</td>
+<td>75</td>
+</tr>
+<tr>
+<th>24</th>
+<td>C</td>
+<td>74</td>
+</tr>
+<tr>
+<th>25</th>
+<td>C</td>
+<td>71</td>
+</tr>
+<tr>
+<th>26</th>
+<td>C</td>
+<td>73</td>
+</tr>
+<tr>
+<th>27</th>
+<td>C</td>
+<td>69</td>
+</tr>
+<tr>
+<th>28</th>
+<td>C</td>
+<td>77</td>
+</tr>
+<tr>
+<th>29</th>
+<td>C</td>
+<td>76</td>
 </tr>
 </tbody>
 </table>
-<hr/>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=91a014f9-6fe1-4b5e-9ff8-a004a729002d">
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=752e359a-7545-4b55-a6c7-53975d8c06dc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
@@ -6358,9 +6668,974 @@ $$</li>
 </div>
 </clipboard-copy>
 </div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 方差齐性检验（Levene检验）</span>
+<span class="n">stat</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">levene</span><span class="p">(</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'Method'</span><span class="p">]</span><span class="o">==</span><span class="s1">'A'</span><span class="p">][</span><span class="s1">'Score'</span><span class="p">],</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'Method'</span><span class="p">]</span><span class="o">==</span><span class="s1">'B'</span><span class="p">][</span><span class="s1">'Score'</span><span class="p">],</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'Method'</span><span class="p">]</span><span class="o">==</span><span class="s1">'C'</span><span class="p">][</span><span class="s1">'Score'</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Levene检验p值: </span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  <span class="c1"># p&gt;0.05时满足方差齐性</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-3"># 方差齐性检验（Levene检验）
+stat, p = stats.levene(
+    df[df['Method']=='A']['Score'],
+    df[df['Method']=='B']['Score'],
+    df[df['Method']=='C']['Score']
+)
+print(f"Levene检验p值: {p:.4f}")  # p&gt;0.05时满足方差齐性</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Levene检验p值: 0.6117
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a191fe72-ecf3-4a95-8c07-e7c22476d342">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>方差分析（ANOVA）的齐性检验（Homogeneity of Variance）用于验证各组数据的方差是否相等，这是ANOVA的核心假设之一。如果方差不齐（异方差），ANOVA的F检验结果可能不可靠。以下是齐性检验的原理及常见方法：</p>
+<h4 id="1"><strong>(1) 原假设与备择假设</strong><a class="anchor-link" href="#1">¶</a></h4><ul>
+<li><strong>原假设（H₀）</strong>：所有组的方差相等（$\sigma_1^2 = \sigma_2^2 = \dots = \sigma_k^2$）。</li>
+<li><strong>备择假设（H₁）</strong>：至少存在两组方差不等。</li>
+</ul>
+<h4 id="2"><strong>(2) 核心思想</strong><a class="anchor-link" href="#2">¶</a></h4><p>通过统计检验，判断各组方差是否存在显著差异。常用的检验方法包括：</p>
+<ul>
+<li><strong>Bartlett检验</strong>（参数检验，假设数据服从正态分布）。</li>
+<li><strong>Levene检验</strong>（非参数检验，对非正态数据更鲁棒）。</li>
+<li><strong>Fligner-Killeen检验</strong>（基于中位数的非参数检验，适合偏态数据）。</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9e2fafab-20af-4c38-8594-11c680ea8be4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 单因素方差分析</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">ols</span><span class="p">(</span><span class="s1">'Score ~ Method'</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="n">anova_table</span> <span class="o">=</span> <span class="n">anova_lm</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">方差分析表："</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">anova_table</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-4"># 单因素方差分析
+model = ols('Score ~ Method', data=df).fit()
+anova_table = anova_lm(model)
+print("\n方差分析表：")
+print(anova_table)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+方差分析表：
+            df       sum_sq     mean_sq          F        PR(&gt;F)
+Method     2.0  1129.266667  564.633333  48.458678  1.164466e-09
+Residual  27.0   314.600000   11.651852        NaN           NaN
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9f7d61d8-2ce0-4b88-ad2a-009041914e01">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">anova_table</span> <span class="c1">#pandas 方式显式结果</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-5">anova_table #pandas 方式显式结果</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>df</th>
+<th>sum_sq</th>
+<th>mean_sq</th>
+<th>F</th>
+<th>PR(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Method</th>
+<td>2.0</td>
+<td>1129.266667</td>
+<td>564.633333</td>
+<td>48.458678</td>
+<td>1.164466e-09</td>
+</tr>
+<tr>
+<th>Residual</th>
+<td>27.0</td>
+<td>314.600000</td>
+<td>11.651852</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6ab60e3e-3b4f-405d-8110-5e1214fc6c4b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [124]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1">#model.summary()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-6">#model.summary()</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e035422e-8bb1-41ac-8ba3-a4cc3fa8e597">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>输出解读</strong>：</p>
+<ul>
+<li><strong>F值</strong>：计算出的F统计量（如F=25.0）。</li>
+<li><strong>p值</strong>：若p &lt; 0.05，拒绝原假设，说明至少有两组均值差异显著。</li>
+<li><strong>df</strong>：自由度（组间自由度=2，组内自由度=27）。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f7393c42-6e8f-4118-9725-331f0d104a32">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="">多因素方差分析<a class="anchor-link" href="#">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=42d15bd9-12d3-4c11-89bf-20b4a8f2b19e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>多因素方差分析（Multi-Factor ANOVA）是一种用于研究<strong>两个或更多自变量（因素）</strong>对<strong>一个连续因变量</strong>影响的统计方法。其核心在于分解总变异来源，评估各因素的独立效应（主效应）及因素间的交互效应。以下是其原理的详细说明：</p>
+<hr/>
+<h3 id="1"><strong>1. 基本概念</strong><a class="anchor-link" href="#1">¶</a></h3><ul>
+<li><strong>因素（Factor）</strong>：自变量，如“肥料类型”、“灌溉频率”。</li>
+<li><strong>水平（Level）</strong>：因素的取值，如肥料类型分为“A/B”，灌溉频率分为“低/中/高”。</li>
+<li><strong>主效应（Main Effect）</strong>：单个因素对因变量的独立影响。</li>
+<li><strong>交互效应（Interaction Effect）</strong>：两个或多个因素共同作用对因变量的影响（即一个因素的效应随另一因素水平变化而变化）。</li>
+</ul>
+<hr/>
+<h3 id="2"><strong>2. 数学模型</strong><a class="anchor-link" href="#2">¶</a></h3><p>以<strong>双因素方差分析</strong>为例，模型公式为：
+$$
+Y_{ijk} = \mu + \alpha_i + \beta_j + (\alpha\beta)_{ij} + \epsilon_{ijk}
+$$</p>
+<ul>
+<li>$Y_{ijk}$：第$i$个水平因素A、第$j$个水平因素B的第$k$次观测值。</li>
+<li>$\mu$：总体均值。</li>
+<li>$\alpha_i$：因素A第$i$个水平的主效应$(\sum \alpha_i = 0$）。</li>
+<li>$\beta_j$：因素B第$j$个水平的主效应（$\sum \beta_j = 0$）。</li>
+<li>$(\alpha\beta)_{ij}$：因素A与B的交互效应（$\sum (\alpha\beta)_{ij} = 0$ 对每个$i$和$j$）。</li>
+<li>$\epsilon_{ijk}$：随机误差，服从正态分布 $N(0, \sigma^2)$。</li>
+</ul>
+<hr/>
+<h3 id="3"><strong>3. 总变异的分解</strong><a class="anchor-link" href="#3">¶</a></h3><p>将总平方和（SST）分解为以下部分：
+$$
+\text{SST} = \text{SSA} + \text{SSB} + \text{SSAB} + \text{SSE}
+$$</p>
+<ul>
+<li><strong>SSA</strong>：因素A的主效应平方和（组间变异）。</li>
+<li><strong>SSB</strong>：因素B的主效应平方和（组间变异）。</li>
+<li><strong>SSAB</strong>：因素A与B的交互效应平方和。</li>
+<li><strong>SSE</strong>：误差平方和（组内变异）。</li>
+</ul>
+<hr/>
+<h3 id="4"><strong>4. 假设检验</strong><a class="anchor-link" href="#4">¶</a></h3><p>通过F检验判断各效应是否显著：</p>
+<h4 id="1"><strong>(1) 主效应检验</strong><a class="anchor-link" href="#1">¶</a></h4><ul>
+<li><strong>原假设</strong>：因素A（或B）的所有水平均值相等。
+$$
+H_0: \alpha_1 = \alpha_2 = \dots = \alpha_a = 0 \quad \text{或} \quad H_0: \beta_1 = \beta_2 = \dots = \beta_b = 0
+$$</li>
+<li><strong>F统计量</strong>：
+$$
+F_A = \frac{\text{MSA}}{\text{MSE}} = \frac{\text{SSA}/(a-1)}{\text{SSE}/(N-ab)}
+$$
+$$
+F_B = \frac{\text{MSB}}{\text{MSE}} = \frac{\text{SSB}/(b-1)}{\text{SSE}/(N-ab)}
+$$<ul>
+<li>$a, b$：因素A和B的水平数。</li>
+<li>$N$：总样本量，$ab$为单元格数（每个组合的样本量需相等时为平衡设计）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="2"><strong>(2) 交互效应检验</strong><a class="anchor-link" href="#2">¶</a></h4><ul>
+<li><strong>原假设</strong>：因素A与B无交互作用（$(\alpha\beta)_{ij} = 0$对所有i,j）。</li>
+<li><strong>F统计量</strong>：
+$$
+F_{AB} = \frac{\text{MSAB}}{\text{MSE}} = \frac{\text{SSAB}/[(a-1)(b-1)]}{\text{SSE}/(N-ab)}
+$$</li>
+</ul>
+<h4 id="3"><strong>(3) 决策规则</strong><a class="anchor-link" href="#3">¶</a></h4><ul>
+<li>若<strong>F值 &gt; 临界值</strong> 或 <strong>p值 &lt; α（如0.05）</strong>，拒绝原假设，认为效应显著。</li>
+</ul>
+<hr/>
+<h3 id="5"><strong>5. 交互效应的解释</strong><a class="anchor-link" href="#5">¶</a></h3><ul>
+<li><strong>显著交互效应</strong>：因素A的效应依赖于因素B的水平（反之亦然）。<br/>
+<strong>示例</strong>：肥料A在“高灌溉”时增产明显，但在“低灌溉”时效果差。</li>
+<li><strong>分析策略</strong>：若交互效应显著，需通过<strong>简单效应分析</strong>（Simple Effects Analysis）探索具体差异。</li>
+</ul>
+<hr/>
+<h3 id="6"><strong>6. 前提条件</strong><a class="anchor-link" href="#6">¶</a></h3><ol>
+<li><strong>独立性</strong>：观测值相互独立。</li>
+<li><strong>正态性</strong>：每组数据近似正态分布。</li>
+<li><strong>方差齐性</strong>：各单元格（因素组合）的方差相等（可用Levene检验验证）。</li>
+</ol>
+<hr/>
+<h3 id="7"><strong>7. 实例分析（双因素）</strong><a class="anchor-link" href="#7">¶</a></h3><h4 id=""><strong>数据</strong>：<a class="anchor-link" href="#">¶</a></h4><table>
+<thead>
+<tr>
+<th>肥料类型</th>
+<th>灌溉频率</th>
+<th>产量（kg）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>低</td>
+<td>50, 52, 48</td>
+</tr>
+<tr>
+<td>A</td>
+<td>高</td>
+<td>65, 68, 70</td>
+</tr>
+<tr>
+<td>B</td>
+<td>低</td>
+<td>55, 53, 57</td>
+</tr>
+<tr>
+<td>B</td>
+<td>高</td>
+<td>75, 78, 72</td>
+</tr>
+</tbody>
+</table>
+<h4 id=""><strong>步骤</strong>：<a class="anchor-link" href="#">¶</a></h4><ol>
+<li><strong>计算各平方和</strong>：<ul>
+<li>SSA（肥料主效应）、SSB（灌溉主效应）、SSAB（交互效应）、SSE（误差）。</li>
+</ul>
+</li>
+<li><strong>计算F值</strong>：比较各效应均方与误差均方。</li>
+<li><strong>结论</strong>：<ul>
+<li>若肥料和灌溉的主效应均显著，且交互效应显著，说明二者共同影响产量。</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=76bafab6-8628-4008-a932-db5185168e09">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2"><strong>引入并细化上述问题2</strong><a class="anchor-link" href="#2">¶</a></h3><p>研究肥料类型（A/B）​和灌溉频率（低/中/高）​对作物产量的影响，每种组合重复3次实验，分析主效应和交互效应。</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=86b6c22d-0b18-4597-b216-d1663a5e0fbb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [131]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sm</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.formula.api</span><span class="w"> </span><span class="kn">import</span> <span class="n">ols</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.stats.anova</span><span class="w"> </span><span class="kn">import</span> <span class="n">anova_lm</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">shapiro</span><span class="p">,</span> <span class="n">levene</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-7">import pandas as pd
+import numpy as np
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
+from scipy.stats import shapiro, levene</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8adc25cf-cd63-44f2-84f9-6084e33df1ac">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [106]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 生成模拟数据</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># 定义因素水平</span>
+<span class="n">fertilizers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'A'</span><span class="p">,</span> <span class="s1">'B'</span><span class="p">]</span>
+<span class="n">irrigation</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Low'</span><span class="p">,</span> <span class="s1">'Medium'</span><span class="p">,</span> <span class="s1">'High'</span><span class="p">]</span>
+<span class="n">replicates</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-8"># 生成模拟数据
+np.random.seed(42)
+
+# 定义因素水平
+fertilizers = ['A', 'B']
+irrigation = ['Low', 'Medium', 'High']
+replicates = 3</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7f7bb95d-1f1b-4cf1-9f16-809933504c92">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [108]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 创建数据框</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">fert</span> <span class="ow">in</span> <span class="n">fertilizers</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">irr</span> <span class="ow">in</span> <span class="n">irrigation</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">rep</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">replicates</span><span class="p">):</span>
+            <span class="c1"># 模拟产量（假设真实效应存在）</span>
+            <span class="k">if</span> <span class="n">fert</span> <span class="o">==</span> <span class="s1">'A'</span><span class="p">:</span>
+                <span class="n">base</span> <span class="o">=</span> <span class="mi">50</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">base</span> <span class="o">=</span> <span class="mi">60</span>
+            <span class="k">if</span> <span class="n">irr</span> <span class="o">==</span> <span class="s1">'Low'</span><span class="p">:</span>
+                <span class="n">effect</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">elif</span> <span class="n">irr</span> <span class="o">==</span> <span class="s1">'Medium'</span><span class="p">:</span>
+                <span class="n">effect</span> <span class="o">=</span> <span class="mi">10</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">effect</span> <span class="o">=</span> <span class="mi">15</span>
+            <span class="c1"># 添加随机噪声</span>
+            <span class="n">yield_val</span> <span class="o">=</span> <span class="n">base</span> <span class="o">+</span> <span class="n">effect</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">fert</span><span class="p">,</span> <span class="n">irr</span><span class="p">,</span> <span class="n">yield_val</span><span class="p">])</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'Fertilizer'</span><span class="p">,</span> <span class="s1">'Irrigation'</span><span class="p">,</span> <span class="s1">'Yield'</span><span class="p">])</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-9"># 创建数据框
+data = []
+for fert in fertilizers:
+    for irr in irrigation:
+        for rep in range(replicates):
+            # 模拟产量（假设真实效应存在）
+            if fert == 'A':
+                base = 50
+            else:
+                base = 60
+            if irr == 'Low':
+                effect = 0
+            elif irr == 'Medium':
+                effect = 10
+            else:
+                effect = 15
+            # 添加随机噪声
+            yield_val = base + effect + np.random.normal(0, 5)
+            data.append([fert, irr, yield_val])
+
+df = pd.DataFrame(data, columns=['Fertilizer', 'Irrigation', 'Yield'])</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=37d98295-d256-4d01-97c8-4520e4e17ea2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 查看数据</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"前5行数据："</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-10"># 查看数据
+print("前5行数据：")
+print(df.head())</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>前5行数据：
+  Fertilizer Irrigation      Yield
+0          A        Low  52.483571
+1          A        Low  49.308678
+2          A        Low  53.238443
+3          A     Medium  67.615149
+4          A     Medium  58.829233
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=74551e2c-8a89-427a-b83f-740e9092312e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 检查正态性（对每个组进行Shapiro-Wilk检验）</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">正态性检验（Shapiro-Wilk）："</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'Fertilizer'</span><span class="p">,</span> <span class="s1">'Irrigation'</span><span class="p">]):</span>
+    <span class="n">_</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">shapiro</span><span class="p">(</span><span class="n">group</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">'Yield'</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"组 </span><span class="si">{</span><span class="n">group</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">: p值 = </span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-11"># 检查正态性（对每个组进行Shapiro-Wilk检验）
+print("\n正态性检验（Shapiro-Wilk）：")
+for group in df.groupby(['Fertilizer', 'Irrigation']):
+    _, p = shapiro(group[1]['Yield'])
+    print(f"组 {group[0]}: p值 = {p:.4f}")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+正态性检验（Shapiro-Wilk）：
+组 ('A', 'High'): p值 = 0.7723
+组 ('A', 'Low'): p值 = 0.3476
+组 ('A', 'Medium'): p值 = 0.0000
+组 ('B', 'High'): p值 = 0.6500
+组 ('B', 'Low'): p值 = 0.0038
+组 ('B', 'Medium'): p值 = 0.1508
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9e9e57f4-4019-4e00-bbfa-86e9db420b68">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [114]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-12">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 方差齐性检验（Levene检验）</span>
+<span class="n">groups</span> <span class="o">=</span> <span class="p">[</span><span class="n">group</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">'Yield'</span><span class="p">]</span> <span class="k">for</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'Fertilizer'</span><span class="p">,</span> <span class="s1">'Irrigation'</span><span class="p">])]</span>
+<span class="n">stat</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">levene</span><span class="p">(</span><span class="o">*</span><span class="n">groups</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Levene方差齐性检验p值: </span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-12"># 方差齐性检验（Levene检验）
+groups = [group[1]['Yield'] for group in df.groupby(['Fertilizer', 'Irrigation'])]
+stat, p = levene(*groups)
+print(f"\nLevene方差齐性检验p值: {p:.4f}")</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Levene方差齐性检验p值: 0.9587
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b50fbf5e-5781-4079-b84f-82a2c07a703e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [116]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-13">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 双因素方差分析（含交互效应）</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">ols</span><span class="p">(</span><span class="s1">'Yield ~ C(Fertilizer) + C(Irrigation) + C(Fertilizer):C(Irrigation)'</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="n">anova_table</span> <span class="o">=</span> <span class="n">anova_lm</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">typ</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># typ=2适用于平衡设计</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-13"># 双因素方差分析（含交互效应）
+model = ols('Yield ~ C(Fertilizer) + C(Irrigation) + C(Fertilizer):C(Irrigation)', data=df).fit()
+anova_table = anova_lm(model, typ=2)  # typ=2适用于平衡设计</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a5896d4c-f5a5-4e9b-a783-35ea43b4e6f5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [118]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-14">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">双因素方差分析表："</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">anova_table</span><span class="p">)</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-14">print("\n双因素方差分析表：")
+print(anova_table)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+双因素方差分析表：
+                                 sum_sq    df          F    PR(&gt;F)
+C(Fertilizer)                112.956823   1.0   6.043313  0.030131
+C(Irrigation)                674.760910   2.0  18.050221  0.000241
+C(Fertilizer):C(Irrigation)   19.615021   2.0   0.524712  0.604699
+Residual                     224.294508  12.0        NaN       NaN
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e0b42868-7dac-460a-b181-43318cea219e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [120]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-15">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># 交互效应可视化（可选）</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">pointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">'Irrigation'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'Yield'</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">'Fertilizer'</span><span class="p">,</span> <span class="n">errorbar</span><span class="o">=</span><span class="p">(</span><span class="s1">'ci'</span><span class="p">,</span> <span class="mi">95</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"交互效应图"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-15">
+# 交互效应可视化（可选）
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+sns.pointplot(data=df, x='Irrigation', y='Yield', hue='Fertilizer', errorbar=('ci', 95))
+plt.title("交互效应图")
+plt.show()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
+<img alt="No description has been provided for this image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi0AAAHDCAYAAADoTyodAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguNCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8fJSN1AAAACXBIWXMAAA9hAAAPYQGoP6dpAABczklEQVR4nO3dd3iT5f7H8Xe6W+igjBZogQ72agEFURAUFUUEFD1H8CAcUJY4UFREf44jbnEDggP1MAQniCIoW0SZhVIUKKulbDrpbp/fHzlUS9LSQpM0zed1Xblscj9Jvq2FfHi+93PfJsMwDERERESqOTdHFyAiIiJSEQotIiIi4hQUWkRERMQpKLSIiIiIU1BoEREREaeg0CIiIiJOQaFFREREnIJCi4iIiDgFhRYRqZZyc3OxtvZlfn4+ycnJDqhIRBxNoUVEylVUVMSwYcMYO3as3d7zzJkzNGzYkKVLl1qMbd68mSZNmjB//vxKv25cXByZmZlVUaKIOIBCi4iUy93dndTUVD788EOOHz9e7rH5+fnk5eVV+LWLi4vJzc21eDw4OJgrrriCt99+22JszZo1NGrUiNtuu63C7wOQlJRE586dmTdv3gWPjYyMxGQyVer2yCOPVKoeEak8D0cXICLVR35+Pl5eXhaPjx8/noyMDJKSkggJCSk1VlxcTGFhIV5eXjz33HNMnTq1Uu/Ztm1b4uPjKSoq4rXXXsPHxwd3d3dat25NUFAQ7777Lvn5+XTp0oWePXvy5ZdfMnr0aIs6DcPAZDIBkJGRQUZGRqlxk8lEbGwsH3/8Mf369St5TkFBAfn5+URFReHp6QmAh4cHb7zxBmPGjCl5/vvvv0/37t1p3769xfdw00034e3tXanvW0QqT6FFRErce++9zJ07l1q1alkd79OnT6n7xcXFZGVl8X//938888wzTJgwgWHDhuHr64vJZKJXr14MHjyY++67z+rrFRUVUVRUBJgDxIEDB/D19cXd3R2TyUR6ejrp6enk5eURFRVFfHw8W7ZsYceOHUydOhXDMEpC09dff83AgQMBmDZtGlOnTi3z+2jXrl3Je+bn55Ofn09iYiLNmjUDzKHFw8MDHx8fAHbv3s0jjzzCxIkTS4WWc8e5ubnh7u5esR+yiFw0hRYRKfHyyy/z7LPP4u3tTXJyMu+99x5PP/10yYc3QEJCAp988gnPPfccHh4eZGRkEBgYCEBISEjJmZisrCwOHDhAjx49CAsLu+B7e3h4MHPmTE6fPs3tt9/O7Nmz8ff359577+X9998nJCSEUaNGcc011/Dzzz8D0KNHD3r37s3kyZNLzpKc07t3b5YvX35RP4e/v1ZRURGjR4+msLCQV155hVdeeQUwn7lZv3493bt3B8DNTd12EVvTnzIRKRESEkLTpk1xd3fn7rvvZuHChSQlJREaGlpy27t3LwsWLOC2224jJyeH1q1b06hRI4vX2rJlC8XFxdSvX5/k5GSL29mzZ63W8Pzzz7N3717q1q1LQEAA+/fvZ/jw4cTHxzNnzpxSZ23Onj1LvXr18PX1xcOj9L/BzrWKzklNTeWHH34o9VhBQQEHDhywqOHvz3388cdZt24dd911V8mZma5duzJhwoSSwCIi9qHQIiKl7N69m+7du3P69GlWr15Njx49So2PHDmSpUuXkpqaSqdOnfjss8+svs7mzZsB6Nq1K+Hh4Ra3H3/80eI5v/76K++++y4fffQRQUFB+Pj4MHfuXFatWsUnn3xCy5YtGTZsGIWFhYB5cm2TJk2svv/57Zo1a9YwePBgjh07VvLYli1biI6O5vPPP7f6GuvXr2fGjBl89913bNq0ibvvvpshQ4YQEBDAa6+9VsZPUERsRaFFREps3ryZTp064e3tzerVq5k2bZpFuPj444+5++67Wbx4MTExMfz5559WX+v333/nuuuuwzCMUrfdu3cD5gm4f1dQUMDIkSO555576Ny5MwCnT59m3rx5zJo1i8mTJ7Nx40aKiopISEjg9OnTnDp1ipYtW1q8t2EYeHp68vnnnzNkyBAABgwYQIsWLXj22WdLjlu7di1eXl5cf/31Vr+Hq666in379nHjjTdy77338umnn/LNN99w7733ag6LiAMotIhIiS5dujBv3jw2bNhAq1atOHbsWKkP+by8PJ5//nl69OhB27ZtWblyJc8//7zV19q4caPV9smff/6Jl5cXUVFRpR739PRk3bp19OjRg44dO/Lbb7/x008/8d5773HbbbcRHByMv78/nTt35ocffuD3338nKCiIFi1aWLxHWloavr6+tGvXjkWLFrFixQpMJhNPPPEEH330ESkpKQAsWbKEO+64gzp16lj9HtatW8ebb75Jy5YtmTVrFosWLeL1119n3LhxREREMGLECFatWlXhn6+IXBpNxBWRUgYNGlTy9bmAMnfuXIYOHcqECRMoLCxk+vTpABbzSM45duwYhw8fJiYmxmIdloSEBFq0aGH1uXXr1uXOO+/kzz//5OqrryYkJIS777671FVAffv25csvv2Tv3r1cc801Vs94nDlzhrp169K2bVvGjBnDAw88QHx8PIMGDSI4OJg33niDSZMm8euvv5Z7ifahQ4eIj49n6tSp1K9fn3/+85+MHDmSn3/+me3btzN37lwaNmxY/g9URKqOISJSjoceesgICgoyHn30UcPb29v49ddfL/icr776ygDKvN1xxx0XfI1hw4YZgPHEE0+UevzAgQOGm5ub4evrayxdutTqc7t27WpMmzbNMAzDOHr0qOHr62ssWLDAMAzD+Prrr43ExETj5ZdfNpo3b271+R07djTeeeedkvtFRUVGfn6+8fnnnxuXX3650bx5c6O4uLhk/NprrzWefvrpC35PInJp1B4SkXI9+eSTFBcX88orr/Dwww/TrVu3Cz6nX79+pKamWr21a9fOYj7L+ZYvX878+fMZNmwYL774Ii+88ELJWO3atQkODgagV69eFs81DKPkbA5AaGgoI0aMKJkwPHDgQCIiIpg1axb33ntvhX4Gn376KS1atGDjxo288cYbrF+/3uLqJBGxPbWHRMSqoqIivvzySx5//HFCQkK48cYbeemllzh58iQPPPBAucHDy8vL6sq6hmGQmJhImzZtynzuBx98wPjx4/nPf/7DY489RuvWrUs2SNywYQPDhg0jKiqKzMxMbr31VhYsWEBQUFDJ83/77TcyMzNLTdB99tlnS7WYfvrpJ44cOcKIESPK/N7/rn///nh4eDB//nx69uxJq1at2Lp1a6nvsbi4uMzvSUSqhkKLiJTYvXs38fHxrF69miVLlpCamsqDDz7IE088ga+vL0OGDOGJJ55g9uzZtGrVil69etG2bVt69+5NYGAgZ86cwdPTs8yzEEePHiUnJwcvLy/++OOPknVPwsLCCA4O5s4772TRokVMmzaNBx54ADCvk7J3716GDx/OZ599xvDhw5k+fTqnT5/mqquuonXr1jz99NMMGzYMPz8/Fi1aRLNmzQgODmb79u14eXnh5ubGqVOnSup455136N27NydPnuTEiRPk5ubSrFmzkgm5hYWFpKWlldpNulevXvTq1YsjR46Q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f/9+3nzzTerXrw/A7bffzrRp0xxcsVR3Xbp0KQktf/zxB506dQJg06ZNdO3alcDAQG699VbS09NLnvPBBx8QFhZGo0aNWLZsmcVrWmsPnX8q/u+n8ps1a8aYMWMIDQ3lscceY8CAAdSvX58tW7ZU8XcrNVlZ7aEdO3bQrl076tWrx8SJE2nVqhXvvPNOyfjs2bMJCQmhQYMGfPHFF/YsuUZSaBEAkpKSuOmmmxg/fjxbtmwhKyuL4cOH4+bmRocOHdizZw9//PEHLVu25PTp0+zdu5fY2FhHly3VXPPmzTl48CApKSkEBQXh5+dHWloaN954I/369WPnzp1kZ2fz8MMPAxAXF8d9993He++9x48//sjChQurpI709HSeeuopXnnlFYYPH06bNm2sBiJxbTt37iQoKKjkVhFjxoxh6NChrFy5kg8//JCPP/6Yu+66CzC3RL/88kvWr1/P8OHDmThxog2rdw0KLQLAf//7X7p3784999xDZGQkM2fO5Ntvv+XYsWPExsayZ88eDh8+zLXXXssff/xBYmKiQotckLu7OxERESxZsoQOHToAkJWVhaenJ0899RRNmjThoYceYvHixQB88803XHfddQwYMID27dszadKkKqnj7rvvpm3btoSEhDBo0CAiIiIoKCiokteWmqNly5Zs37695FYR27dv57bbbqNDhw60adOGgwcPUqdOHcD8u/7JJ5/QvHlzRo0aRVJSkg2rdw01ZpdnuTRJSUlERkaW3G/UqBHe3t4kJSURGxvL9u3bKSwspGXLlqxatYoGDRqovysV0qFDBxYuXEivXr34+eef8fT05OTJkyV/sRcXF5OZmUlubi5Hjx4lPDy85Ll//52sjOzs7FL3fXx8Sv1XxBovL69KX5kWHR3Nr7/+Sr169di7dy9t2rQpGWvdujUhISElry2XTmdaBDDPjN+/f3/J/SNHjpCXl0eTJk2IjY1l48aN+Pv707x5c7755hudZZEK69ChAytXriw501JYWEiXLl1K/jUbFxfHtm3b8PT0pEGDBqSkpJQ89/DhwxV6D5PJRFFRUcn9zZs3V+03IVKGtm3bcv/99xMaGsqwYcPo2LFjyZgmjFc9hRYXVFBQQHJycqnbkCFD2LBhA7Nnz+bAgQOMHTuWgQMHEhISQrt27dixYwfNmzenefPmbNmypWRCpciFnAsr5/5bq1YtDh06xO+//467uzsLFiygb9++GIbBgAED+PHHH/n+++/ZtWsXr776aoXeIywsjF27dpGamsrx48d57bXXbPb9iJyzf/9+1q5dyy+//EJiYqIuTrADhRYXlJCQQHh4eKlbSkoKS5cu5b333iM2NpZatWrx8ccfA+adTFu3bk2LFi0ICgqiXr16Ci1SYR07diQgIKDktHtQUBCLFy/m9ddfp1WrVnz99dcsXrwYDw8POnfuzLRp07jnnnu46aabuPHGGyv0Hr1796Zv3760b9+e/v378/zzz9vwOxIxa9asGSEhIVx99dVERETg6+vLmDFjHF1WjaZdnkVERC7Chx9+yMKFC/nggw/w8/MjLi6Om266iRMnTqg1ZCOaiCsiInIRrrnmGubNm0e7du3IyckhIiKC119/XYHFhnSmRURERJyC5rSIiIiIU1BoEREREaeg0CIiIiJOQaFFREREnIJCi4iIiDgFhRYRqZDVq1dX6X5Tq1evrvQ+L5dizpw59OrVy27vJyJVT5c8i0iFrF69moEDB5KWllYlr1dYWEh2dnaVrmlhMpk4cOCA1TCUn59Pfn4+tWvXrrL3ExH70uJyIuIQHh4edl2Ey8vLSzvtijg5tYdE5KL16tWLOXPmMG3aNJo2bcrixYsrNAZlt4dWrlxJREQEjRs35tFHHyU8PLzkuTNnziQ8PBx/f38GDhxIZmYmAK1atcJkMgEQERGByWRiwYIFpV63rPbQF198QcuWLalXrx733Xcfubm5ADzzzDMMHz6c5557jqCgIJo2bcq6desu+mclIpdOoUVELsn777/PypUrmT17Nt27d6/wmDWGYfCvf/2L//znP8ydO5fp06ezcuVKevfuzc6dO7nvvvv4+OOP2b17NydOnGD69OkAbNq0idTUVADi4uJITU3ltttuu+D7bd68mbvvvpuXX36Z9evXs3nzZh5//PGS8e+//559+/axdetWrrzySqZMmVKZH42IVDG1h0TkkmRlZbF27Vo8PT0rNWbNyZMnSUlJ4Y477sDLywt/f39OnTpF8+bNad68OceOHcPT05Pff/8dwzDYs2cPAP7+/iWvERAQUOEJw7Nnz2bo0KEMHDgQgGnTptGnTx/eeOMNANzd3Zk1axY+Pj4MHz6c0aNHV+h1RcQ2FFpE5JKMGTOmzFBS3pg1devWJSgoiF9//ZWwsDDS09OJjo4GICcnh1GjRrFmzRpiY2Px8PCgqKjokmpPSkqiZ8+eJfcjIyPJycnh1KlTAFxxxRX4+PgA5jkxum5BxLEUWkTkktSqVeuixqwpLi6mc+fO3HTTTRQWFvLSSy9Rv359AN566y1OnjzJ8ePH8fLy4tFHH+XEiROlnm8ymSoVLJo0acL+/ftL7icmJuLn50e9evUAtFuvSDWjOS0iUm2sW7eOM2fOsHnzZg4fPsxDDz1UMpaVlYVhGJw6dYp58+YxY8YMi4ASHR3N0qVLOXLkCGvXrr3g+40aNYq5c+fyzTff8Oeff/Lwww9z7733lkzqFZHqRaFFRKqNyy+/nJMnT3LVVVfRsGFDAgICeO655wB44IEHMAyDFi1a8PHHHzNy5Ei2b99e6vkzZ87kzTffJDo6mvfff/+C79elSxc++eQTHnvsMa688ko6d+7Miy++aItvTUSqgBaXE5Fq46mnniI5OZmpU6fi5eXFihUruO+++zh9+rSjSxORakBzWkSk2hg4cCDjx4+nRYsWFBYW0qJFC2bOnOnoskSkmtCZFhEREXEKmtMiIiIiTkGhRURERJyCQouIiIg4BYUWERERcQoKLSIiIuIUFFpERETEKSi0iIiIiFNQaBERERGn8P9KVl6PizZzMAAAAABJRU5ErkJggg=="/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=59045d4e-daaa-4abd-97c3-ca4dc1d853f0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [122]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-16">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.stats.multicomp</span><span class="w"> </span><span class="kn">import</span> <span class="n">pairwise_tukeyhsd</span>
+<span class="c1"># 比较灌溉频率的影响</span>
+<span class="n">tukey</span> <span class="o">=</span> <span class="n">pairwise_tukeyhsd</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Yield'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Irrigation'</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tukey</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-16">from statsmodels.stats.multicomp import pairwise_tukeyhsd
+# 比较灌溉频率的影响
+tukey = pairwise_tukeyhsd(df['Yield'], df['Irrigation'], alpha=0.05)
+print(tukey.summary())</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre> Multiple Comparison of Means - Tukey HSD, FWER=0.05 
+=====================================================
+group1 group2 meandiff p-adj   lower    upper  reject
+-----------------------------------------------------
+  High    Low -14.9973 0.0002  -22.312 -7.6826   True
+  High Medium  -7.4648 0.0452 -14.7795 -0.1501   True
+   Low Medium   7.5325 0.0432   0.2178 14.8472   True
+-----------------------------------------------------
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3fe7512c-f478-4ff3-bfdd-e85460f6141e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id=""><strong>多因素方差分析中代码输出说明</strong>​<a class="anchor-link" href="#">¶</a></h3><ol>
+<li><p>​<strong>数据预览</strong>​：</p>
+<div class="highlight"><pre><span></span>前5行数据：
+  Fertilizer Irrigation      Yield
+0          A       Low  50.496714
+1          A       Low  52.861736
+2          A       Low  43.646691
+3          A    Medium  61.523226
+4          A    Medium  66.765148
+</pre></div>
+</li>
+<li><p>​<strong>正态性检验</strong>​：<br/>
+ 若所有组的p值 &gt; 0.05，则满足正态性假设。</p>
+</li>
+<li><p>​<strong>方差齐性检验</strong>​：<br/>
+ Levene检验p值 &gt; 0.05时，满足方差齐性。</p>
+</li>
+<li><p>​<strong>方差分析表</strong>​：</p>
+<div class="highlight"><pre><span></span>sum_sq    df          F        PR(&gt;F)
+C(Fertilizer)     1064.86   1.0  47.879373  4.002361e-07
+C(Irrigation)     2317.02   2.0  52.119443  1.113344e-09
+C(Fertilizer):C(Irrigation) 292.03  2.0   6.566372  7.488011e-03
+Residual          266.88    12.0        NaN           NaN
+</pre></div>
+<ul>
+<li>​<strong>Fertilizer主效应</strong>​：p值 &lt; 0.001，肥料类型显著影响产量。</li>
+<li>​<strong>Irrigation主效应</strong>​：p值 &lt; 0.001，灌溉频率显著影响产量。</li>
+<li>​<strong>交互效应</strong>​：p值 = 0.0075 &lt; 0.05，肥料与灌溉存在显著交互作用。</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h3 id="">​<strong>关键解释</strong>​<a class="anchor-link" href="#">¶</a></h3><ol>
+<li><p>​<strong>模型公式</strong>​：<br/>
+<code>Yield ~ C(Fertilizer) + C(Irrigation) + C(Fertilizer):C(Irrigation)</code><br/>
+ 表示同时考虑肥料、灌溉的主效应及其交互效应。</p>
+</li>
+<li><p>​<strong>交互效应图</strong>​：<br/>
+ 可视化显示不同肥料在不同灌溉频率下的产量变化趋势。若线不平行，则存在交互效应（如图中A在低灌溉时表现差，B在高灌溉时表现好）。</p>
+</li>
+<li><p>​<strong>事后检验</strong>​（如需）：<br/>
+ 若主效应显著，可使用Tukey HSD检验比较具体组别：</p>
+</li>
+</ol>
+<hr/>
+<h3 id="">​<strong>注意事项</strong>​<a class="anchor-link" href="#">¶</a></h3><ul>
+<li>​<strong>平衡设计</strong>​：本例每组重复次数相同，若数据不平衡需使用<code>typ=3</code>方差分析。</li>
+<li>​<strong>交互效应</strong>​：若交互作用显著，主效应解释需谨慎，应优先分析交互模式。</li>
+<li>​<strong>数据量</strong>​：小样本时检验功效可能不足，需结合效应量分析。</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a62f480c-d724-4d45-ad0d-f84509ca54f0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-17">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
 <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-3"></div>
+<div class="clipboard-copy-txt" id="cell-17"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cc4e25ca-25f6-4b0b-ab3f-75732486bd5c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-18">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-18"></div>
 </div>
 </div>
 </div>
