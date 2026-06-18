@@ -12,31 +12,31 @@
         <meta name="author" content="Getwage">
       
       
-        <link rel="canonical" href="https://www.getwage.xyz/courses/apply_py/scrap/API/">
+        <link rel="canonical" href="https://www.getwage.xyz/prob_stat/intro/">
       
       
-        <link rel="prev" href="../../Text_app1/Text_app1/">
+        <link rel="prev" href="../../python/numpy_intro/">
       
       
-        <link rel="next" href="../script/">
+        <link rel="next" href="../normal_origin/">
       
       
         
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>API接口使用 - 数字经济与数据科学讲义</title>
+        <title>基本框架 - 数字经济与数据科学讲义</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pythonapi" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="数字经济与数据科学讲义" class="md-header__button md-logo" aria-label="数字经济与数据科学讲义" data-md-component="logo">
+    <a href="../.." title="数字经济与数据科学讲义" class="md-header__button md-logo" aria-label="数字经济与数据科学讲义" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 12h7v1.5h-7m0-4h7V11h-7m0 3.5h7V16h-7m8-12H3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 15h-9V6h9"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API接口使用
+              基本框架
             
           </span>
         </div>
@@ -219,7 +219,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../.." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -239,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../python/1_Python_intro/" class="md-tabs__link">
+        <a href="../../python/1_Python_intro/" class="md-tabs__link">
           
   
   
@@ -255,11 +255,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../prob_stat/intro/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -286,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../python/pandas_intro.md" class="md-tabs__link">
+        <a href="../../python/pandas_intro.md" class="md-tabs__link">
           
   
   
@@ -309,7 +311,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../machine_learning/1_Python_intro.md" class="md-tabs__link">
+        <a href="../../machine_learning/1_Python_intro.md" class="md-tabs__link">
           
   
   
@@ -329,7 +331,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../ai/privacy_security.md" class="md-tabs__link">
+        <a href="../../ai/privacy_security.md" class="md-tabs__link">
           
   
   
@@ -349,7 +351,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../high_maths/1_Python_int.md" class="md-tabs__link">
+        <a href="../../high_maths/1_Python_int.md" class="md-tabs__link">
           
   
   
@@ -369,7 +371,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../quant/privacy_security.md" class="md-tabs__link">
+        <a href="../../quant/privacy_security.md" class="md-tabs__link">
           
   
   
@@ -385,13 +387,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../courses_intro/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../courses/courses_intro/" class="md-tabs__link">
           
   
   
@@ -425,7 +425,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="数字经济与数据科学讲义" class="md-nav__button md-logo" aria-label="数字经济与数据科学讲义" data-md-component="logo">
+    <a href="../.." title="数字经济与数据科学讲义" class="md-nav__button md-logo" aria-label="数字经济与数据科学讲义" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 12h7v1.5h-7m0-4h7V11h-7m0 3.5h7V16h-7m8-12H3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 15h-9V6h9"/></svg>
@@ -497,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -525,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../course_intro/" class="md-nav__link">
+      <a href="../../course_intro/" class="md-nav__link">
         
   
   
@@ -614,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/1_Python_intro/" class="md-nav__link">
+      <a href="../../python/1_Python_intro/" class="md-nav__link">
         
   
   
@@ -642,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/basic_gram/" class="md-nav__link">
+      <a href="../../python/basic_gram/" class="md-nav__link">
         
   
   
@@ -724,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/numpy_intro/" class="md-nav__link">
+      <a href="../../python/numpy_intro/" class="md-nav__link">
         
   
   
@@ -752,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/4_Python_control_structures.md" class="md-nav__link">
+      <a href="../../python/4_Python_control_structures.md" class="md-nav__link">
         
   
   
@@ -842,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/pandas_intro.md" class="md-nav__link">
+      <a href="../../python/pandas_intro.md" class="md-nav__link">
         
   
   
@@ -870,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/5_Python_functions_modules.md" class="md-nav__link">
+      <a href="../../python/5_Python_functions_modules.md" class="md-nav__link">
         
   
   
@@ -960,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/matplotlib_intro.md" class="md-nav__link">
+      <a href="../../python/matplotlib_intro.md" class="md-nav__link">
         
   
   
@@ -988,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/seaborn_intro.md" class="md-nav__link">
+      <a href="../../python/seaborn_intro.md" class="md-nav__link">
         
   
   
@@ -1016,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/plotly_intro.md" class="md-nav__link">
+      <a href="../../python/plotly_intro.md" class="md-nav__link">
         
   
   
@@ -1044,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/bokeh_intro.md" class="md-nav__link">
+      <a href="../../python/bokeh_intro.md" class="md-nav__link">
         
   
   
@@ -1080,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/6_Python_libraries.md" class="md-nav__link">
+      <a href="../../python/6_Python_libraries.md" class="md-nav__link">
         
   
   
@@ -1112,28 +1112,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -1151,7 +1154,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1166,10 +1169,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../prob_stat/intro/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1185,6 +1197,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1197,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../prob_stat/normal_origin/" class="md-nav__link">
+      <a href="../normal_origin/" class="md-nav__link">
         
   
   
@@ -1225,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/numpy_applications.md" class="md-nav__link">
+      <a href="../../python/numpy_applications.md" class="md-nav__link">
         
   
   
@@ -1368,7 +1381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/pandas_intro.md" class="md-nav__link">
+      <a href="../../python/pandas_intro.md" class="md-nav__link">
         
   
   
@@ -1396,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/pandas_data_structures.md" class="md-nav__link">
+      <a href="../../python/pandas_data_structures.md" class="md-nav__link">
         
   
   
@@ -1424,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/pandas_data_operations.md" class="md-nav__link">
+      <a href="../../python/pandas_data_operations.md" class="md-nav__link">
         
   
   
@@ -1452,7 +1465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/pandas_data_analysis.md" class="md-nav__link">
+      <a href="../../python/pandas_data_analysis.md" class="md-nav__link">
         
   
   
@@ -1488,7 +1501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/ai.md" class="md-nav__link">
+      <a href="../../python/ai.md" class="md-nav__link">
         
   
   
@@ -1516,7 +1529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/big_data.md" class="md-nav__link">
+      <a href="../../python/big_data.md" class="md-nav__link">
         
   
   
@@ -1544,7 +1557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../python/cloud_computing.md" class="md-nav__link">
+      <a href="../../python/cloud_computing.md" class="md-nav__link">
         
   
   
@@ -1633,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../machine_learning/1_Python_intro.md" class="md-nav__link">
+      <a href="../../machine_learning/1_Python_intro.md" class="md-nav__link">
         
   
   
@@ -1661,7 +1674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../machine_learning/basic_gram.md" class="md-nav__link">
+      <a href="../../machine_learning/basic_gram.md" class="md-nav__link">
         
   
   
@@ -1689,7 +1702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../machine_learning/3_Python_data_types.md" class="md-nav__link">
+      <a href="../../machine_learning/3_Python_data_types.md" class="md-nav__link">
         
   
   
@@ -1717,7 +1730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../machine_learning/4_Python_control_structures.md" class="md-nav__link">
+      <a href="../../machine_learning/4_Python_control_structures.md" class="md-nav__link">
         
   
   
@@ -1745,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../machine_learning/5_Python_functions_modules.md" class="md-nav__link">
+      <a href="../../machine_learning/5_Python_functions_modules.md" class="md-nav__link">
         
   
   
@@ -1773,7 +1786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../machine_learning/6_Python_libraries.md" class="md-nav__link">
+      <a href="../../machine_learning/6_Python_libraries.md" class="md-nav__link">
         
   
   
@@ -1862,7 +1875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai/privacy_security.md" class="md-nav__link">
+      <a href="../../ai/privacy_security.md" class="md-nav__link">
         
   
   
@@ -1890,7 +1903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai/digital_divide.md" class="md-nav__link">
+      <a href="../../ai/digital_divide.md" class="md-nav__link">
         
   
   
@@ -1918,7 +1931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../ai/sustainability.md" class="md-nav__link">
+      <a href="../../ai/sustainability.md" class="md-nav__link">
         
   
   
@@ -2007,7 +2020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../high_maths/1_Python_int.md" class="md-nav__link">
+      <a href="../../high_maths/1_Python_int.md" class="md-nav__link">
         
   
   
@@ -2035,7 +2048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../high_maths/calculas.md" class="md-nav__link">
+      <a href="../../high_maths/calculas.md" class="md-nav__link">
         
   
   
@@ -2063,7 +2076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../high_maths/vectors_matrices.md" class="md-nav__link">
+      <a href="../../high_maths/vectors_matrices.md" class="md-nav__link">
         
   
   
@@ -2091,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../high_maths/eigenvalues_eigenvectors.md" class="md-nav__link">
+      <a href="../../high_maths/eigenvalues_eigenvectors.md" class="md-nav__link">
         
   
   
@@ -2119,7 +2132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../high_maths/quadratic_forms.md" class="md-nav__link">
+      <a href="../../high_maths/quadratic_forms.md" class="md-nav__link">
         
   
   
@@ -2147,7 +2160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../high_maths/6_Python_libraries.md" class="md-nav__link">
+      <a href="../../high_maths/6_Python_libraries.md" class="md-nav__link">
         
   
   
@@ -2236,7 +2249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../quant/privacy_security.md" class="md-nav__link">
+      <a href="../../quant/privacy_security.md" class="md-nav__link">
         
   
   
@@ -2264,7 +2277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../quant/digital_divide.md" class="md-nav__link">
+      <a href="../../quant/digital_divide.md" class="md-nav__link">
         
   
   
@@ -2292,7 +2305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../quant/sustainability.md" class="md-nav__link">
+      <a href="../../quant/sustainability.md" class="md-nav__link">
         
   
   
@@ -2324,31 +2337,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   
@@ -2366,7 +2376,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2384,7 +2394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../courses_intro/" class="md-nav__link">
+      <a href="../../courses/courses_intro/" class="md-nav__link">
         
   
   
@@ -2409,31 +2419,28 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_2" >
         
           
-          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
             
   
   
@@ -2451,7 +2458,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2469,7 +2476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../first/" class="md-nav__link">
+      <a href="../../courses/apply_py/first/" class="md-nav__link">
         
   
   
@@ -2497,7 +2504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../second/" class="md-nav__link">
+      <a href="../../courses/apply_py/second/" class="md-nav__link">
         
   
   
@@ -2525,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../third/" class="md-nav__link">
+      <a href="../../courses/apply_py/third/" class="md-nav__link">
         
   
   
@@ -2553,7 +2560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../forth_numpy/" class="md-nav__link">
+      <a href="../../courses/apply_py/forth_numpy/" class="md-nav__link">
         
   
   
@@ -2581,7 +2588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/c3/" class="md-nav__link">
+      <a href="../../courses/multi_variance/c3/" class="md-nav__link">
         
   
   
@@ -2609,7 +2616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pandas/" class="md-nav__link">
+      <a href="../../courses/apply_py/Pandas/" class="md-nav__link">
         
   
   
@@ -2637,7 +2644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../pandas_append/" class="md-nav__link">
+      <a href="../../courses/apply_py/pandas_append/" class="md-nav__link">
         
   
   
@@ -2719,7 +2726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/" class="md-nav__link">
         
   
   
@@ -2747,7 +2754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../stock_k/" class="md-nav__link">
+      <a href="../../courses/apply_py/stock_k/" class="md-nav__link">
         
   
   
@@ -2837,7 +2844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/00-Matplotlib_intro/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/00-Matplotlib_intro/" class="md-nav__link">
         
   
   
@@ -2865,7 +2872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/01_simple_line/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/01_simple_line/" class="md-nav__link">
         
   
   
@@ -2893,7 +2900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/02_simple_scatter/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/02_simple_scatter/" class="md-nav__link">
         
   
   
@@ -2921,7 +2928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/03_density_contour/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/03_density_contour/" class="md-nav__link">
         
   
   
@@ -2949,7 +2956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/04_histogram_density/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/04_histogram_density/" class="md-nav__link">
         
   
   
@@ -2977,7 +2984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/05_legend/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/05_legend/" class="md-nav__link">
         
   
   
@@ -3005,7 +3012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/06_3D_plotting/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/06_3D_plotting/" class="md-nav__link">
         
   
   
@@ -3033,7 +3040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/07_GIS/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/07_GIS/" class="md-nav__link">
         
   
   
@@ -3061,7 +3068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Matplotlib/08_color_spline/" class="md-nav__link">
+      <a href="../../courses/apply_py/Matplotlib/08_color_spline/" class="md-nav__link">
         
   
   
@@ -3151,7 +3158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Txt_analysis/Txt_analysis/" class="md-nav__link">
+      <a href="../../courses/apply_py/Txt_analysis/Txt_analysis/" class="md-nav__link">
         
   
   
@@ -3179,7 +3186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Text_app1/Text_app1/" class="md-nav__link">
+      <a href="../../courses/apply_py/Text_app1/Text_app1/" class="md-nav__link">
         
   
   
@@ -3207,7 +3214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Text_app2/Text_app2.ipynb" class="md-nav__link">
+      <a href="../../courses/apply_py/Text_app2/Text_app2.ipynb" class="md-nav__link">
         
   
   
@@ -3240,8 +3247,6 @@
                 
   
   
-    
-  
   
   
     
@@ -3254,11 +3259,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2_11" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_2_11" >
         
           
           <label class="md-nav__link" for="__nav_9_2_11" id="__nav_9_2_11_label" tabindex="0">
@@ -3279,7 +3286,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_11_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_9_2_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9_2_11">
             <span class="md-nav__icon md-icon"></span>
             
@@ -3294,37 +3301,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    API接口使用
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../courses/apply_py/scrap/API/" class="md-nav__link">
         
   
   
@@ -3340,142 +3320,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一、 为什么首选API进行数据采集？
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二、 核心工具准备
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#web-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        三、 WEB-API调用的基础语法
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        四、 实用示例：从入门到进阶
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四、 实用示例：从入门到进阶">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1iot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 1：获取实时天气数据（适合IoT/生活类应用）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2k" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 2：抓取股票历史K线（适合量化交易新手）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 3：监测社交媒体热点（适合市场研究人员）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 4：工业级实战——供应链船舶轨迹追踪与入库
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-akshareapi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 5 ：使用AKshare专用API 获取上市财务数据
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        五、 最佳实践注意
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3488,7 +3332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../script/" class="md-nav__link">
+      <a href="../../courses/apply_py/scrap/script/" class="md-nav__link">
         
   
   
@@ -3516,7 +3360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../three_steps/" class="md-nav__link">
+      <a href="../../courses/apply_py/scrap/three_steps/" class="md-nav__link">
         
   
   
@@ -3566,13 +3410,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -3581,7 +3422,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9_3" >
         
           
-          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
             
   
   
@@ -3617,7 +3458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/first/" class="md-nav__link">
+      <a href="../../courses/multi_variance/first/" class="md-nav__link">
         
   
   
@@ -3645,7 +3486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/second/" class="md-nav__link">
+      <a href="../../courses/multi_variance/second/" class="md-nav__link">
         
   
   
@@ -3673,7 +3514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/third_1/" class="md-nav__link">
+      <a href="../../courses/multi_variance/third_1/" class="md-nav__link">
         
   
   
@@ -3755,7 +3596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/1_pandas_intro/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/1_pandas_intro/" class="md-nav__link">
         
   
   
@@ -3783,7 +3624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/2_pandas_begin/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/2_pandas_begin/" class="md-nav__link">
         
   
   
@@ -3811,7 +3652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/3_pandas_IO/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/3_pandas_IO/" class="md-nav__link">
         
   
   
@@ -3839,7 +3680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/4_pandas_structures/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/4_pandas_structures/" class="md-nav__link">
         
   
   
@@ -3867,7 +3708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/5_pandas_cal/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/5_pandas_cal/" class="md-nav__link">
         
   
   
@@ -3895,7 +3736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/6_pandas_loss/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/6_pandas_loss/" class="md-nav__link">
         
   
   
@@ -3923,7 +3764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/7_pandas_hiindex/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/7_pandas_hiindex/" class="md-nav__link">
         
   
   
@@ -3951,7 +3792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/8_pandas_concate/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/8_pandas_concate/" class="md-nav__link">
         
   
   
@@ -4041,7 +3882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/9_pandas_merge/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/9_pandas_merge/" class="md-nav__link">
         
   
   
@@ -4069,7 +3910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/10_pandas_groupby/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/10_pandas_groupby/" class="md-nav__link">
         
   
   
@@ -4097,7 +3938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/11_pandas_pivot/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/11_pandas_pivot/" class="md-nav__link">
         
   
   
@@ -4125,7 +3966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/12_pandas_string/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/12_pandas_string/" class="md-nav__link">
         
   
   
@@ -4153,7 +3994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/pandas/13_timeseries/" class="md-nav__link">
+      <a href="../../courses/multi_variance/pandas/13_timeseries/" class="md-nav__link">
         
   
   
@@ -4243,7 +4084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/visual/visual/" class="md-nav__link">
+      <a href="../../courses/multi_variance/visual/visual/" class="md-nav__link">
         
   
   
@@ -4271,7 +4112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/visual/Pandas_v/" class="md-nav__link">
+      <a href="../../courses/multi_variance/visual/Pandas_v/" class="md-nav__link">
         
   
   
@@ -4361,7 +4202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/Seven_up/" class="md-nav__link">
+      <a href="../../courses/multi_variance/Seven_up/" class="md-nav__link">
         
   
   
@@ -4389,7 +4230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/Seven_down/" class="md-nav__link">
+      <a href="../../courses/multi_variance/Seven_down/" class="md-nav__link">
         
   
   
@@ -4479,7 +4320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/cluster/cluster/" class="md-nav__link">
+      <a href="../../courses/multi_variance/cluster/cluster/" class="md-nav__link">
         
   
   
@@ -4507,7 +4348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/cluster/cluster_case/" class="md-nav__link">
+      <a href="../../courses/multi_variance/cluster/cluster_case/" class="md-nav__link">
         
   
   
@@ -4597,7 +4438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/Comprehensive_Evaluation/Comp-Eva/" class="md-nav__link">
+      <a href="../../courses/multi_variance/Comprehensive_Evaluation/Comp-Eva/" class="md-nav__link">
         
   
   
@@ -4625,7 +4466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/Comprehensive_Evaluation/AHP/" class="md-nav__link">
+      <a href="../../courses/multi_variance/Comprehensive_Evaluation/AHP/" class="md-nav__link">
         
   
   
@@ -4653,7 +4494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/Comprehensive_Evaluation/Entropy/" class="md-nav__link">
+      <a href="../../courses/multi_variance/Comprehensive_Evaluation/Entropy/" class="md-nav__link">
         
   
   
@@ -4743,7 +4584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/PCA/PCA_intro/" class="md-nav__link">
+      <a href="../../courses/multi_variance/PCA/PCA_intro/" class="md-nav__link">
         
   
   
@@ -4771,7 +4612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/PCA/PCA/" class="md-nav__link">
+      <a href="../../courses/multi_variance/PCA/PCA/" class="md-nav__link">
         
   
   
@@ -4799,7 +4640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/PCA/HS300PCA/HS300_PCA/" class="md-nav__link">
+      <a href="../../courses/multi_variance/PCA/HS300PCA/HS300_PCA/" class="md-nav__link">
         
   
   
@@ -4889,7 +4730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/regress/Sklearn_reg/" class="md-nav__link">
+      <a href="../../courses/multi_variance/regress/Sklearn_reg/" class="md-nav__link">
         
   
   
@@ -4917,7 +4758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/regress/statsmodel_reg/" class="md-nav__link">
+      <a href="../../courses/multi_variance/regress/statsmodel_reg/" class="md-nav__link">
         
   
   
@@ -4945,7 +4786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/regress/Textbook_reg/" class="md-nav__link">
+      <a href="../../courses/multi_variance/regress/Textbook_reg/" class="md-nav__link">
         
   
   
@@ -5035,7 +4876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/glm/ANOVA/" class="md-nav__link">
+      <a href="../../courses/multi_variance/glm/ANOVA/" class="md-nav__link">
         
   
   
@@ -5063,7 +4904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/glm/GLM/" class="md-nav__link">
+      <a href="../../courses/multi_variance/glm/GLM/" class="md-nav__link">
         
   
   
@@ -5091,7 +4932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/glm/GLM_textbook/" class="md-nav__link">
+      <a href="../../courses/multi_variance/glm/GLM_textbook/" class="md-nav__link">
         
   
   
@@ -5181,7 +5022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/Discriminant/KNN/" class="md-nav__link">
+      <a href="../../courses/multi_variance/Discriminant/KNN/" class="md-nav__link">
         
   
   
@@ -5209,7 +5050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../multi_variance/Discriminant/Discriminant/" class="md-nav__link">
+      <a href="../../courses/multi_variance/Discriminant/Discriminant/" class="md-nav__link">
         
   
   
@@ -5273,130 +5114,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一、 为什么首选API进行数据采集？
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二、 核心工具准备
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#web-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        三、 WEB-API调用的基础语法
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        四、 实用示例：从入门到进阶
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="四、 实用示例：从入门到进阶">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1iot" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 1：获取实时天气数据（适合IoT/生活类应用）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2k" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 2：抓取股票历史K线（适合量化交易新手）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 3：监测社交媒体热点（适合市场研究人员）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 4：工业级实战——供应链船舶轨迹追踪与入库
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-akshareapi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        示例 5 ：使用AKshare专用API 获取上市财务数据
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        五、 最佳实践注意
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -5412,158 +5129,7 @@
 
 
 
-<h1 id="pythonapi">Python网络数据采集专题：API接入与实战指南<a class="headerlink" href="#pythonapi" title="Permanent link">&para;</a></h1>
-<h2 id="api">一、 为什么首选API进行数据采集？<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
-<p>在Python网络数据采集中，直接调用公开API（Application Programming Interface）是最规范、最高效的方式。相比于传统的网页爬虫（Scrapy/BeautifulSoup），API具有以下核心优势：</p>
-<ul>
-<li><strong>数据质量高</strong>：返回的通常是经过清洗的结构化数据（如JSON/XML），无需复杂的HTML解析。</li>
-<li><strong>稳定性强</strong>：网站前端页面经常改版，但API接口通常会保持向后兼容。</li>
-<li><strong>合规性好</strong>：天然符合平台的使用条款，对目标服务器的负载压力极小。</li>
-<li><strong>实时性保障</strong>：数据延迟通常极低，适合需要高频更新的场景。</li>
-</ul>
-<hr />
-<h2 id="_1">二、 核心工具准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>在开始之前，请确保你的Python环境已安装以下核心库：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>requests<span class="w"> </span>pandas
-</code></pre></div>
-<ul>
-<li><code>requests</code>：发送HTTP请求的神器，几行代码即可实现API调用。</li>
-<li><code>pandas</code>：用于将获取到的JSON数据转化为结构化表格（DataFrame），方便后续分析或入库。</li>
-</ul>
-<hr />
-<h2 id="web-api">三、 WEB-API调用的基础语法<a class="headerlink" href="#web-api" title="Permanent link">&para;</a></h2>
-<p>几乎所有正规开放平台都会提供RESTful API。以下是使用<code>requests</code>库调用API的标准模板：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.example.com/data&quot;</span>  <span class="c1"># API接口地址</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;key1&quot;</span><span class="p">:</span> <span class="s2">&quot;value1&quot;</span><span class="p">,</span> <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>  <span class="c1"># 查询参数</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="s2">&quot;User-Agent&quot;</span><span class="p">:</span> <span class="s2">&quot;MyDataCollector/1.0&quot;</span><span class="p">,</span>  <span class="c1"># 强烈建议添加，避免被拦截</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer YOUR_TOKEN&quot;</span>  <span class="c1"># 若需鉴权则添加</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>  <span class="c1"># 自动将JSON转为Python字典/列表</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;获取数据成功：&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;请求失败，状态码：</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="_2">四、 实用示例：从入门到进阶<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="1iot">示例 1：获取实时天气数据（适合IoT/生活类应用）<a class="headerlink" href="#1iot" title="Permanent link">&para;</a></h3>
-<p><em>场景：调用OpenWeatherMap API获取指定城市的实时气象信息。</em></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">API_KEY</span> <span class="o">=</span> <span class="s1">&#39;8abd518e58e48fb268a005f991cecb37&#39;</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">CITY</span> <span class="o">=</span> <span class="s1">&#39;Beijing&#39;</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;http://api.openweathermap.org/data/2.5/weather?q=</span><span class="si">{</span><span class="n">CITY</span><span class="si">}</span><span class="s2">&amp;appid=</span><span class="si">{</span><span class="n">API_KEY</span><span class="si">}</span><span class="s2">&amp;units=metric&quot;</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># 提取关键字段并转为DataFrame</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">weather_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="s1">&#39;城市&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]],</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="s1">&#39;温度(℃)&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;main&#39;</span><span class="p">][</span><span class="s1">&#39;temp&#39;</span><span class="p">]],</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="s1">&#39;湿度(%)&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;main&#39;</span><span class="p">][</span><span class="s1">&#39;humidity&#39;</span><span class="p">]],</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="s1">&#39;天气状况&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;weather&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;description&#39;</span><span class="p">]]</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">})</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="nb">print</span><span class="p">(</span><span class="n">weather_df</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="2k">示例 2：抓取股票历史K线（适合量化交易新手）<a class="headerlink" href="#2k" title="Permanent link">&para;</a></h3>
-<p><em>场景：调用Alpha Vantage API获取股票每日收盘价等时序数据。</em></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">API_KEY</span> <span class="o">=</span> <span class="s1">&#39;你的API密钥&#39;</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">SYMBOL</span> <span class="o">=</span> <span class="s1">&#39;IBM&#39;</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&amp;symbol=</span><span class="si">{</span><span class="n">SYMBOL</span><span class="si">}</span><span class="s2">&amp;apikey=</span><span class="si">{</span><span class="n">API_KEY</span><span class="si">}</span><span class="s2">&quot;</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1"># 解析时间序列字典</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">ts</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Time Series (Daily)&#39;</span><span class="p">]</span>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span> <span class="c1"># 按时间正序排列</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</code></pre></div>
-<h3 id="3">示例 3：监测社交媒体热点（适合市场研究人员）<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<p><em>场景：通过Twitter API v2搜索包含特定关键词的最新推文。</em></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">BEARER_TOKEN</span> <span class="o">=</span> <span class="s1">&#39;你的Bearer Token&#39;</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">BEARER_TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.twitter.com/2/tweets/search/recent?query=python&amp;max_results=10&quot;</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c1"># 提取文本内容</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="n">tweets</span> <span class="o">=</span> <span class="p">[</span><span class="n">tweet</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">tweet</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]]</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">tweet_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tweets</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;推文内容&#39;</span><span class="p">])</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">tweet_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</code></pre></div>
-<h3 id="4">示例 4：工业级实战——供应链船舶轨迹追踪与入库<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
-<p><em>场景：调用MarineTraffic API获取船舶位置，并进行数据库持久化存储。</em></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sqlalchemy</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_engine</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">API_KEY</span> <span class="o">=</span> <span class="s1">&#39;你的API密钥&#39;</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://services.marinetraffic.com/api/exportvesseltrack/</span><span class="si">{</span><span class="n">API_KEY</span><span class="si">}</span><span class="s2">/v:2/shipid:241234560/protocol:jsono&quot;</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;lastUpdate&#39;</span><span class="p">])</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="c1"># 存入MySQL数据库</span>
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s1">&#39;mysql+pymysql://user:pass@localhost/supply_chain&#39;</span><span class="p">)</span>
-<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="n">df</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s1">&#39;vessel_tracking&#39;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;船舶轨迹数据入库成功！&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="5-akshareapi">示例 5 ：使用AKshare专用API 获取上市财务数据<a class="headerlink" href="#5-akshareapi" title="Permanent link">&para;</a></h3>
-<p>_场景：通过非注册API获取上市公司资产负债表</p>
-<ul>
-<li>首先需要安装akshare库。
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>akshare
-</code></pre></div></li>
-<li>获取指定日期的资产负债表简报：
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">stock_zcfz_em_df</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_zcfz_em</span><span class="p">(</span><span class="n">date</span><span class="o">=</span><span class="s2">&quot;20240331&quot;</span><span class="p">)</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">stock_zcfz_em_df</span><span class="p">)</span>
-</code></pre></div></li>
-<li>获取上市公司苏泊尔（sz002032）2016-2020年度合并资产负债表数据。
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">akshare</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ak</span> 
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.sans-serif&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;SimHei&#39;</span><span class="p">]</span> <span class="c1">#设置中文显示字体</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.unicode_minus&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1">#负号显示正常</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">df1</span> <span class="o">=</span> <span class="n">ak</span><span class="o">.</span><span class="n">stock_financial_report_sina</span><span class="p">(</span><span class="n">stock</span><span class="o">=</span><span class="s1">&#39;002032&#39;</span><span class="p">,</span><span class="n">symbol</span><span class="o">=</span><span class="s1">&#39;资产负债表&#39;</span><span class="p">)</span>
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">df1</span>
-</code></pre></div></li>
-</ul>
-<hr />
-<h2 id="_3">五、 最佳实践注意<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>遵守速率限制（Rate Limit）</strong>：API提供商通常会限制请求频率（如每秒5次）。务必检查响应头中的 <code>X-RateLimit-Remaining</code>，遇到 <code>429 Too Many Requests</code> 时，应实现指数退避重试机制（Exponential Backoff）。</li>
-<li><strong>处理登录态与Token</strong>：对于需要授权的接口，不要每次都重新登录。应使用 <code>requests.Session()</code> 来复用Cookie，或在Header中携带长效的 <code>Authorization: Bearer &lt;token&gt;</code>。注意Token过期刷新逻辑。</li>
-<li><strong>应对CSRF防护</strong>：部分Web系统在POST请求前要求携带CSRF Token。需先GET获取登录页，解析出隐藏的 <code>csrf_token</code> 字段，再将其放入下一次POST请求的Body或Header中。</li>
-<li><strong>动态网页的API逆向</strong>：如果目标网站是SPA（单页应用），用<code>requests</code>抓取的HTML可能是空的。此时需打开浏览器开发者工具（F12 -&gt; Network -&gt; XHR/Fetch），观察翻页或滚动时触发的真实API接口，直接用Python请求该JSON接口，效率远高于Selenium。</li>
-<li><strong>合规与安全</strong>：永远不要采集用户隐私或未公开的商业敏感数据；设置真实的 <code>User-Agent</code>，不伪造请求来源；遵循平台的Robots协议和使用条款。</li>
-</ol>
-<hr />
+<h1 id="_1">概率与统计基础与专题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 
 
 
@@ -5584,7 +5150,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 18, 2026 07:39:46 UTC">June 18, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 18, 2026 07:39:47 UTC">June 18, 2026</span>
   </span>
 
     
@@ -5666,12 +5232,12 @@ footer {
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "header.autohide", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "header.autohide", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
