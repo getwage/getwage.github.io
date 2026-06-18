@@ -6070,7 +6070,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -6108,120 +6108,151 @@ pd.read_csv('https://www.getwage.xyz/courses/multi_variance/pandas/data/team.csv
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">HTTPError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 3</span>
-<span class="ansi-green-fg">      1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">pandas</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,135,0)">as</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">pd</span>
-<span class="ansi-green-fg">      2</span> <span style="color: rgb(95,135,135)"># 文件目录</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span> pd<span style="color: rgb(98,98,98)">.</span>read_csv(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">https://www.getwage.xyz/courses/multi_variance/pandas/data/team.csv</span><span style="color: rgb(175,0,0)">'</span>)
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py:1026</span>, in <span class="ansi-cyan-fg">read_csv</span><span class="ansi-blue-intense-fg ansi-bold">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
-<span class="ansi-green-fg">   1013</span> kwds_defaults <span style="color: rgb(98,98,98)">=</span> _refine_defaults_read(
-<span class="ansi-green-fg">   1014</span>     dialect,
-<span class="ansi-green-fg">   1015</span>     delimiter,
-<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
-<span class="ansi-green-fg">   1022</span>     dtype_backend<span style="color: rgb(98,98,98)">=</span>dtype_backend,
-<span class="ansi-green-fg">   1023</span> )
-<span class="ansi-green-fg">   1024</span> kwds<span style="color: rgb(98,98,98)">.</span>update(kwds_defaults)
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1026</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> _read(filepath_or_buffer, kwds)
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py:620</span>, in <span class="ansi-cyan-fg">_read</span><span class="ansi-blue-intense-fg ansi-bold">(filepath_or_buffer, kwds)</span>
-<span class="ansi-green-fg">    617</span> _validate_names(kwds<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">names</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>))
-<span class="ansi-green-fg">    619</span> <span style="color: rgb(95,135,135)"># Create the parser.</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 620</span> parser <span style="color: rgb(98,98,98)">=</span> TextFileReader(filepath_or_buffer, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>kwds)
-<span class="ansi-green-fg">    622</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> chunksize <span class="ansi-bold" style="color: rgb(175,0,255)">or</span> iterator:
-<span class="ansi-green-fg">    623</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> parser
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py:1620</span>, in <span class="ansi-cyan-fg">TextFileReader.__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, f, engine, **kwds)</span>
-<span class="ansi-green-fg">   1617</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>options[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">has_index_names</span><span style="color: rgb(175,0,0)">"</span>] <span style="color: rgb(98,98,98)">=</span> kwds[<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">has_index_names</span><span style="color: rgb(175,0,0)">"</span>]
-<span class="ansi-green-fg">   1619</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>handles: IOHandles <span style="color: rgb(98,98,98)">|</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span> <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1620</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_engine <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_make_engine(f, <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>engine)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py:1880</span>, in <span class="ansi-cyan-fg">TextFileReader._make_engine</span><span class="ansi-blue-intense-fg ansi-bold">(self, f, engine)</span>
-<span class="ansi-green-fg">   1878</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">b</span><span style="color: rgb(175,0,0)">"</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> mode:
-<span class="ansi-green-fg">   1879</span>         mode <span style="color: rgb(98,98,98)">+</span><span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">b</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1880</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>handles <span style="color: rgb(98,98,98)">=</span> get_handle(
-<span class="ansi-green-fg">   1881</span>     f,
-<span class="ansi-green-fg">   1882</span>     mode,
-<span class="ansi-green-fg">   1883</span>     encoding<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>options<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">encoding</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>),
-<span class="ansi-green-fg">   1884</span>     compression<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>options<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">compression</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>),
-<span class="ansi-green-fg">   1885</span>     memory_map<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>options<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">memory_map</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">False</span>),
-<span class="ansi-green-fg">   1886</span>     is_text<span style="color: rgb(98,98,98)">=</span>is_text,
-<span class="ansi-green-fg">   1887</span>     errors<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>options<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">encoding_errors</span><span style="color: rgb(175,0,0)">"</span>, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">strict</span><span style="color: rgb(175,0,0)">"</span>),
-<span class="ansi-green-fg">   1888</span>     storage_options<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>options<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">storage_options</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>),
-<span class="ansi-green-fg">   1889</span> )
-<span class="ansi-green-fg">   1890</span> <span class="ansi-bold" style="color: rgb(0,135,0)">assert</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>handles <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-fg">   1891</span> f <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>handles<span style="color: rgb(98,98,98)">.</span>handle
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:728</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-intense-fg ansi-bold">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-fg">    725</span>     codecs<span style="color: rgb(98,98,98)">.</span>lookup_error(errors)
-<span class="ansi-green-fg">    727</span> <span style="color: rgb(95,135,135)"># open URLs</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 728</span> ioargs <span style="color: rgb(98,98,98)">=</span> _get_filepath_or_buffer(
-<span class="ansi-green-fg">    729</span>     path_or_buf,
-<span class="ansi-green-fg">    730</span>     encoding<span style="color: rgb(98,98,98)">=</span>encoding,
-<span class="ansi-green-fg">    731</span>     compression<span style="color: rgb(98,98,98)">=</span>compression,
-<span class="ansi-green-fg">    732</span>     mode<span style="color: rgb(98,98,98)">=</span>mode,
-<span class="ansi-green-fg">    733</span>     storage_options<span style="color: rgb(98,98,98)">=</span>storage_options,
-<span class="ansi-green-fg">    734</span> )
-<span class="ansi-green-fg">    736</span> handle <span style="color: rgb(98,98,98)">=</span> ioargs<span style="color: rgb(98,98,98)">.</span>filepath_or_buffer
-<span class="ansi-green-fg">    737</span> handles: <span style="color: rgb(0,135,0)">list</span>[BaseBuffer]
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:384</span>, in <span class="ansi-cyan-fg">_get_filepath_or_buffer</span><span class="ansi-blue-intense-fg ansi-bold">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
-<span class="ansi-green-fg">    382</span> <span style="color: rgb(95,135,135)"># assuming storage_options is to be interpreted as headers</span>
-<span class="ansi-green-fg">    383</span> req_info <span style="color: rgb(98,98,98)">=</span> urllib<span style="color: rgb(98,98,98)">.</span>request<span style="color: rgb(98,98,98)">.</span>Request(filepath_or_buffer, headers<span style="color: rgb(98,98,98)">=</span>storage_options)
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 384</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> urlopen(req_info) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> req:
-<span class="ansi-green-fg">    385</span>     content_encoding <span style="color: rgb(98,98,98)">=</span> req<span style="color: rgb(98,98,98)">.</span>headers<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Content-Encoding</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
-<span class="ansi-green-fg">    386</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> content_encoding <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">gzip</span><span style="color: rgb(175,0,0)">"</span>:
-<span class="ansi-green-fg">    387</span>         <span style="color: rgb(95,135,135)"># Override compression based on Content-Encoding header</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:289</span>, in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
-<span class="ansi-green-fg">    283</span> <span style="color: rgb(175,0,0)">"""</span>
-<span class="ansi-green-fg">    284</span> <span style="color: rgb(175,0,0)">Lazy-import wrapper for stdlib urlopen, as that imports a big chunk of</span>
-<span class="ansi-green-fg">    285</span> <span style="color: rgb(175,0,0)">the stdlib.</span>
-<span class="ansi-green-fg">    286</span> <span style="color: rgb(175,0,0)">"""</span>
-<span class="ansi-green-fg">    287</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">urllib</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">request</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 289</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> urllib<span style="color: rgb(98,98,98)">.</span>request<span style="color: rgb(98,98,98)">.</span>urlopen(<span style="color: rgb(98,98,98)">*</span>args, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>kwargs)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:215</span>, in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(url, data, timeout, cafile, capath, cadefault, context)</span>
-<span class="ansi-green-fg">    213</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    214</span>     opener <span style="color: rgb(98,98,98)">=</span> _opener
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 215</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> opener<span style="color: rgb(98,98,98)">.</span>open(url, data, timeout)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:521</span>, in <span class="ansi-cyan-fg">OpenerDirector.open</span><span class="ansi-blue-intense-fg ansi-bold">(self, fullurl, data, timeout)</span>
-<span class="ansi-green-fg">    519</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> processor <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>process_response<span style="color: rgb(98,98,98)">.</span>get(protocol, []):
-<span class="ansi-green-fg">    520</span>     meth <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(processor, meth_name)
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 521</span>     response <span style="color: rgb(98,98,98)">=</span> meth(req, response)
-<span class="ansi-green-fg">    523</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> response
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:630</span>, in <span class="ansi-cyan-fg">HTTPErrorProcessor.http_response</span><span class="ansi-blue-intense-fg ansi-bold">(self, request, response)</span>
-<span class="ansi-green-fg">    627</span> <span style="color: rgb(95,135,135)"># According to RFC 2616, "2xx" code indicates that the client's</span>
-<span class="ansi-green-fg">    628</span> <span style="color: rgb(95,135,135)"># request was successfully received, understood, and accepted.</span>
-<span class="ansi-green-fg">    629</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> (<span style="color: rgb(98,98,98)">200</span> <span style="color: rgb(98,98,98)">&lt;</span><span style="color: rgb(98,98,98)">=</span> code <span style="color: rgb(98,98,98)">&lt;</span> <span style="color: rgb(98,98,98)">300</span>):
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 630</span>     response <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>parent<span style="color: rgb(98,98,98)">.</span>error(
-<span class="ansi-green-fg">    631</span>         <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">http</span><span style="color: rgb(175,0,0)">'</span>, request, response, code, msg, hdrs)
-<span class="ansi-green-fg">    633</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> response
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:559</span>, in <span class="ansi-cyan-fg">OpenerDirector.error</span><span class="ansi-blue-intense-fg ansi-bold">(self, proto, *args)</span>
-<span class="ansi-green-fg">    557</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> http_err:
-<span class="ansi-green-fg">    558</span>     args <span style="color: rgb(98,98,98)">=</span> (<span style="color: rgb(0,135,0)">dict</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">default</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">http_error_default</span><span style="color: rgb(175,0,0)">'</span>) <span style="color: rgb(98,98,98)">+</span> orig_args
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 559</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_call_chain(<span style="color: rgb(98,98,98)">*</span>args)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:492</span>, in <span class="ansi-cyan-fg">OpenerDirector._call_chain</span><span class="ansi-blue-intense-fg ansi-bold">(self, chain, kind, meth_name, *args)</span>
-<span class="ansi-green-fg">    490</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> handler <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> handlers:
-<span class="ansi-green-fg">    491</span>     func <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(handler, meth_name)
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 492</span>     result <span style="color: rgb(98,98,98)">=</span> func(<span style="color: rgb(98,98,98)">*</span>args)
-<span class="ansi-green-fg">    493</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-fg">    494</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> result
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:639</span>, in <span class="ansi-cyan-fg">HTTPDefaultErrorHandler.http_error_default</span><span class="ansi-blue-intense-fg ansi-bold">(self, req, fp, code, msg, hdrs)</span>
-<span class="ansi-green-fg">    638</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span><span style="color: rgb(188,188,188)"> </span><span style="color: rgb(0,0,255)">http_error_default</span>(<span style="color: rgb(0,135,0)">self</span>, req, fp, code, msg, hdrs):
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 639</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> HTTPError(req<span style="color: rgb(98,98,98)">.</span>full_url, code, msg, hdrs, fp)
-
-<span class="ansi-red-intense-fg ansi-bold">HTTPError</span>: HTTP Error 404: Not Found</pre>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Unnamed: 0</th>
+<th>name</th>
+<th>team</th>
+<th>Q1</th>
+<th>Q2</th>
+<th>Q3</th>
+<th>Q4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>0</td>
+<td>Liver</td>
+<td>E</td>
+<td>89</td>
+<td>21</td>
+<td>24</td>
+<td>64</td>
+</tr>
+<tr>
+<th>1</th>
+<td>1</td>
+<td>Arry</td>
+<td>C</td>
+<td>36</td>
+<td>37</td>
+<td>37</td>
+<td>57</td>
+</tr>
+<tr>
+<th>2</th>
+<td>2</td>
+<td>Ack</td>
+<td>A</td>
+<td>57</td>
+<td>60</td>
+<td>18</td>
+<td>84</td>
+</tr>
+<tr>
+<th>3</th>
+<td>3</td>
+<td>Eorge</td>
+<td>C</td>
+<td>93</td>
+<td>96</td>
+<td>71</td>
+<td>78</td>
+</tr>
+<tr>
+<th>4</th>
+<td>4</td>
+<td>Oah</td>
+<td>D</td>
+<td>65</td>
+<td>49</td>
+<td>61</td>
+<td>86</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>95</th>
+<td>95</td>
+<td>Gabriel</td>
+<td>C</td>
+<td>48</td>
+<td>59</td>
+<td>87</td>
+<td>74</td>
+</tr>
+<tr>
+<th>96</th>
+<td>96</td>
+<td>Austin7</td>
+<td>C</td>
+<td>21</td>
+<td>31</td>
+<td>30</td>
+<td>43</td>
+</tr>
+<tr>
+<th>97</th>
+<td>97</td>
+<td>Lincoln4</td>
+<td>C</td>
+<td>98</td>
+<td>93</td>
+<td>1</td>
+<td>20</td>
+</tr>
+<tr>
+<th>98</th>
+<td>98</td>
+<td>Eli</td>
+<td>E</td>
+<td>11</td>
+<td>74</td>
+<td>58</td>
+<td>91</td>
+</tr>
+<tr>
+<th>99</th>
+<td>99</td>
+<td>Ben</td>
+<td>E</td>
+<td>21</td>
+<td>43</td>
+<td>41</td>
+<td>74</td>
+</tr>
+</tbody>
+</table>
+<p>100 rows × 7 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -6233,7 +6264,7 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\reque
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
@@ -6270,7 +6301,7 @@ pd.read_csv(StringIO(data))</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -6328,7 +6359,7 @@ pd.read_csv(StringIO(data))</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
@@ -6353,7 +6384,7 @@ pd.read_csv(StringIO(data))</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -6519,7 +6550,7 @@ pd.read_csv(StringIO(data))</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
@@ -6552,7 +6583,7 @@ pd.read_table(data) # read_table 默认是制表符分隔 tab</div>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -6640,13 +6671,13 @@ pd.read_table(data) # read_table 默认是制表符分隔 tab</div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=67b99ac0-5fc3-431c-9a42-cc08ec12e313">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=67b99ac0-5fc3-431c-9a42-cc08ec12e313">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
@@ -6696,28 +6727,6 @@ pd.read_csv(data, usecols=lambda x: x.upper() in ['COL3', 'COL1'])</div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[5], line 6</span>
-<span class="ansi-green-fg">      4</span> pd<span style="color: rgb(98,98,98)">.</span>read_csv(data, names<span style="color: rgb(98,98,98)">=</span>[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">列1</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">列2</span><span style="color: rgb(175,0,0)">'</span>]) <span style="color: rgb(95,135,135)"># 指定列名列表</span>
-<span class="ansi-green-fg">      5</span> <span style="color: rgb(95,135,135)"># 如没列名，自动指定一个: 前缀加序数</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 6</span> pd<span style="color: rgb(98,98,98)">.</span>read_csv(data, prefix<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">c_</span><span style="color: rgb(175,0,0)">'</span>, header<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
-<span class="ansi-green-fg">      8</span> <span style="color: rgb(95,135,135)"># 读取部分列</span>
-<span class="ansi-green-fg">      9</span> pd<span style="color: rgb(98,98,98)">.</span>read_csv(data, usecols<span style="color: rgb(98,98,98)">=</span>[<span style="color: rgb(98,98,98)">0</span>,<span style="color: rgb(98,98,98)">4</span>,<span style="color: rgb(98,98,98)">3</span>]) <span style="color: rgb(95,135,135)"># 按索引只读取指定列，顺序无关</span>
-
-<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: read_csv() got an unexpected keyword argument 'prefix'</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c776fcc5-7ec7-4f50-a9b0-983cbdb7ce9c">
@@ -6730,13 +6739,13 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[5], line 6</span>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8faa82bc-f715-4fba-8374-ef115ed6bcc8">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8faa82bc-f715-4fba-8374-ef115ed6bcc8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -6780,28 +6789,6 @@ date_parser=lambda x: pd.to_datetime(x, utc=True, format=...)</div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[6], line 3</span>
-<span class="ansi-green-fg">      1</span> data <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">https://gairuo.com/file/data/dataset/GDP-China.csv</span><span style="color: rgb(175,0,0)">'</span>
-<span class="ansi-green-fg">      2</span> <span style="color: rgb(95,135,135)"># 指定数据类型</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span> pd<span style="color: rgb(98,98,98)">.</span>read_csv(data, dtype<span style="color: rgb(98,98,98)">=</span>np<span style="color: rgb(98,98,98)">.</span>float64) <span style="color: rgb(95,135,135)"># 所有数据均为此数据类型</span>
-<span class="ansi-green-fg">      4</span> pd<span style="color: rgb(98,98,98)">.</span>read_csv(data, dtype<span style="color: rgb(98,98,98)">=</span>{<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">c1</span><span style="color: rgb(175,0,0)">'</span>:np<span style="color: rgb(98,98,98)">.</span>float64, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">c2</span><span style="color: rgb(175,0,0)">'</span>: <span style="color: rgb(0,135,0)">str</span>}) <span style="color: rgb(95,135,135)"># 指定字段的类型</span>
-<span class="ansi-green-fg">      6</span> <span style="color: rgb(95,135,135)"># 解析日期时间</span>
-
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'np' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf6ecdc6-0662-4c4a-adef-172b645a80f5">
@@ -6814,13 +6801,13 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[6], line 3</span>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a20f948e-2158-4159-801b-5b6ce87ebad1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a20f948e-2158-4159-801b-5b6ce87ebad1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
@@ -6856,26 +6843,6 @@ df.Q1.to_csv('Q1_test.txt', index=None)</div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[7], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> df<span style="color: rgb(98,98,98)">.</span>to_csv(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">done.csv</span><span style="color: rgb(175,0,0)">'</span>)
-<span class="ansi-green-fg">      2</span> df<span style="color: rgb(98,98,98)">.</span>to_csv(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">data/done.csv</span><span style="color: rgb(175,0,0)">'</span>) <span style="color: rgb(95,135,135)"># 可以指定文件目录路径</span>
-<span class="ansi-green-fg">      3</span> df<span style="color: rgb(98,98,98)">.</span>to_csv(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">done.csv</span><span style="color: rgb(175,0,0)">'</span>, index<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>) <span style="color: rgb(95,135,135)"># 不要索引</span>
-
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'df' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fab74fcc-62ee-41c7-a8f5-67ffcd0bcdb4">
@@ -6889,13 +6856,13 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[7], line 1</span>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d0e6af21-359f-4b19-99d4-3c6ce9612848">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d0e6af21-359f-4b19-99d4-3c6ce9612848">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
@@ -6925,60 +6892,6 @@ xlsx.sheet_names
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>                         Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[8], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> xlsx <span style="color: rgb(98,98,98)">=</span> pd<span style="color: rgb(98,98,98)">.</span>ExcelFile(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">data.xlsx</span><span style="color: rgb(175,0,0)">'</span>)
-<span class="ansi-green-fg">      2</span> df <span style="color: rgb(98,98,98)">=</span> pd<span style="color: rgb(98,98,98)">.</span>read_excel(xlsx, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Sheet1</span><span style="color: rgb(175,0,0)">'</span>) <span style="color: rgb(95,135,135)"># 读取</span>
-<span class="ansi-green-fg">      3</span> xlsx<span style="color: rgb(98,98,98)">.</span>parse(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">sheet1</span><span style="color: rgb(175,0,0)">'</span>) <span style="color: rgb(95,135,135)"># 取指定标签为 DataFrame</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1550</span>, in <span class="ansi-cyan-fg">ExcelFile.__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, path_or_buffer, engine, storage_options, engine_kwargs)</span>
-<span class="ansi-green-fg">   1548</span>     ext <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">xls</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1549</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1550</span>     ext <span style="color: rgb(98,98,98)">=</span> inspect_excel_format(
-<span class="ansi-green-fg">   1551</span>         content_or_path<span style="color: rgb(98,98,98)">=</span>path_or_buffer, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options
-<span class="ansi-green-fg">   1552</span>     )
-<span class="ansi-green-fg">   1553</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> ext <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-fg">   1554</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
-<span class="ansi-green-fg">   1555</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Excel file format cannot be determined, you must specify </span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1556</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an engine manually.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1557</span>         )
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1402</span>, in <span class="ansi-cyan-fg">inspect_excel_format</span><span class="ansi-blue-intense-fg ansi-bold">(content_or_path, storage_options)</span>
-<span class="ansi-green-fg">   1399</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(content_or_path, <span style="color: rgb(0,135,0)">bytes</span>):
-<span class="ansi-green-fg">   1400</span>     content_or_path <span style="color: rgb(98,98,98)">=</span> BytesIO(content_or_path)
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1402</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> get_handle(
-<span class="ansi-green-fg">   1403</span>     content_or_path, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">rb</span><span style="color: rgb(175,0,0)">"</span>, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options, is_text<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
-<span class="ansi-green-fg">   1404</span> ) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> handle:
-<span class="ansi-green-fg">   1405</span>     stream <span style="color: rgb(98,98,98)">=</span> handle<span style="color: rgb(98,98,98)">.</span>handle
-<span class="ansi-green-fg">   1406</span>     stream<span style="color: rgb(98,98,98)">.</span>seek(<span style="color: rgb(98,98,98)">0</span>)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:882</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-intense-fg ansi-bold">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-fg">    873</span>         handle <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">open</span>(
-<span class="ansi-green-fg">    874</span>             handle,
-<span class="ansi-green-fg">    875</span>             ioargs<span style="color: rgb(98,98,98)">.</span>mode,
-<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
-<span class="ansi-green-fg">    878</span>             newline<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-fg">    879</span>         )
-<span class="ansi-green-fg">    880</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    881</span>         <span style="color: rgb(95,135,135)"># Binary mode</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 882</span>         handle <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">open</span>(handle, ioargs<span style="color: rgb(98,98,98)">.</span>mode)
-<span class="ansi-green-fg">    883</span>     handles<span style="color: rgb(98,98,98)">.</span>append(handle)
-<span class="ansi-green-fg">    885</span> <span style="color: rgb(95,135,135)"># Convert BytesIO or file objects passed with an encoding</span>
-
-<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>: [Errno 2] No such file or directory: 'data.xlsx'</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8256cdd8-cb4f-4df5-bc35-bbce6eeede90">
@@ -6991,13 +6904,13 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-package
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c47c0226-c2d5-4a98-81e8-9f9fb8005d71">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c47c0226-c2d5-4a98-81e8-9f9fb8005d71">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
@@ -7037,76 +6950,6 @@ pd.read_excel('tmp.xlsx', index_col=0,
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>                         Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[9], line 2</span>
-<span class="ansi-green-fg">      1</span> <span style="color: rgb(95,135,135)"># Returns a DataFrame</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span> pd<span style="color: rgb(98,98,98)">.</span>read_excel(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">team.xlsx</span><span style="color: rgb(175,0,0)">'</span>) <span style="color: rgb(95,135,135)"># 默认读取第一个标签页 Sheet</span>
-<span class="ansi-green-fg">      3</span> pd<span style="color: rgb(98,98,98)">.</span>read_excel(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">path_to_file.xls</span><span style="color: rgb(175,0,0)">'</span>, sheet_name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Sheet1</span><span style="color: rgb(175,0,0)">'</span>) <span style="color: rgb(95,135,135)"># 指定 Sheet</span>
-<span class="ansi-green-fg">      4</span> <span style="color: rgb(95,135,135)"># 从网址 url 读取</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:495</span>, in <span class="ansi-cyan-fg">read_excel</span><span class="ansi-blue-intense-fg ansi-bold">(io, sheet_name, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, date_format, thousands, decimal, comment, skipfooter, storage_options, dtype_backend, engine_kwargs)</span>
-<span class="ansi-green-fg">    493</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(io, ExcelFile):
-<span class="ansi-green-fg">    494</span>     should_close <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">True</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 495</span>     io <span style="color: rgb(98,98,98)">=</span> ExcelFile(
-<span class="ansi-green-fg">    496</span>         io,
-<span class="ansi-green-fg">    497</span>         storage_options<span style="color: rgb(98,98,98)">=</span>storage_options,
-<span class="ansi-green-fg">    498</span>         engine<span style="color: rgb(98,98,98)">=</span>engine,
-<span class="ansi-green-fg">    499</span>         engine_kwargs<span style="color: rgb(98,98,98)">=</span>engine_kwargs,
-<span class="ansi-green-fg">    500</span>     )
-<span class="ansi-green-fg">    501</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> engine <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> engine <span style="color: rgb(98,98,98)">!=</span> io<span style="color: rgb(98,98,98)">.</span>engine:
-<span class="ansi-green-fg">    502</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
-<span class="ansi-green-fg">    503</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Engine should not be specified when passing </span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">    504</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an ExcelFile - ExcelFile already has the engine set</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">    505</span>     )
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1550</span>, in <span class="ansi-cyan-fg">ExcelFile.__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, path_or_buffer, engine, storage_options, engine_kwargs)</span>
-<span class="ansi-green-fg">   1548</span>     ext <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">xls</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1549</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1550</span>     ext <span style="color: rgb(98,98,98)">=</span> inspect_excel_format(
-<span class="ansi-green-fg">   1551</span>         content_or_path<span style="color: rgb(98,98,98)">=</span>path_or_buffer, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options
-<span class="ansi-green-fg">   1552</span>     )
-<span class="ansi-green-fg">   1553</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> ext <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-fg">   1554</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
-<span class="ansi-green-fg">   1555</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Excel file format cannot be determined, you must specify </span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1556</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an engine manually.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1557</span>         )
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1402</span>, in <span class="ansi-cyan-fg">inspect_excel_format</span><span class="ansi-blue-intense-fg ansi-bold">(content_or_path, storage_options)</span>
-<span class="ansi-green-fg">   1399</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(content_or_path, <span style="color: rgb(0,135,0)">bytes</span>):
-<span class="ansi-green-fg">   1400</span>     content_or_path <span style="color: rgb(98,98,98)">=</span> BytesIO(content_or_path)
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1402</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> get_handle(
-<span class="ansi-green-fg">   1403</span>     content_or_path, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">rb</span><span style="color: rgb(175,0,0)">"</span>, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options, is_text<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
-<span class="ansi-green-fg">   1404</span> ) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> handle:
-<span class="ansi-green-fg">   1405</span>     stream <span style="color: rgb(98,98,98)">=</span> handle<span style="color: rgb(98,98,98)">.</span>handle
-<span class="ansi-green-fg">   1406</span>     stream<span style="color: rgb(98,98,98)">.</span>seek(<span style="color: rgb(98,98,98)">0</span>)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:882</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-intense-fg ansi-bold">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-fg">    873</span>         handle <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">open</span>(
-<span class="ansi-green-fg">    874</span>             handle,
-<span class="ansi-green-fg">    875</span>             ioargs<span style="color: rgb(98,98,98)">.</span>mode,
-<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
-<span class="ansi-green-fg">    878</span>             newline<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-fg">    879</span>         )
-<span class="ansi-green-fg">    880</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    881</span>         <span style="color: rgb(95,135,135)"># Binary mode</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 882</span>         handle <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">open</span>(handle, ioargs<span style="color: rgb(98,98,98)">.</span>mode)
-<span class="ansi-green-fg">    883</span>     handles<span style="color: rgb(98,98,98)">.</span>append(handle)
-<span class="ansi-green-fg">    885</span> <span style="color: rgb(95,135,135)"># Convert BytesIO or file objects passed with an encoding</span>
-
-<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>: [Errno 2] No such file or directory: 'team.xlsx'</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3496eeb2-df59-43d4-9bf1-390e9ea9ba58">
@@ -7119,13 +6962,13 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-package
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d8e1e45b-5aab-427f-9d0d-41a301fd83cb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d8e1e45b-5aab-427f-9d0d-41a301fd83cb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
@@ -7145,73 +6988,6 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-package
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>                         Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[10], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> pd<span style="color: rgb(98,98,98)">.</span>read_excel(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">path_to_file.xls</span><span style="color: rgb(175,0,0)">'</span>, sheet_name<span style="color: rgb(98,98,98)">=</span>[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Sheet1</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Sheet2</span><span style="color: rgb(175,0,0)">'</span>])
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:495</span>, in <span class="ansi-cyan-fg">read_excel</span><span class="ansi-blue-intense-fg ansi-bold">(io, sheet_name, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, date_format, thousands, decimal, comment, skipfooter, storage_options, dtype_backend, engine_kwargs)</span>
-<span class="ansi-green-fg">    493</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(io, ExcelFile):
-<span class="ansi-green-fg">    494</span>     should_close <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">True</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 495</span>     io <span style="color: rgb(98,98,98)">=</span> ExcelFile(
-<span class="ansi-green-fg">    496</span>         io,
-<span class="ansi-green-fg">    497</span>         storage_options<span style="color: rgb(98,98,98)">=</span>storage_options,
-<span class="ansi-green-fg">    498</span>         engine<span style="color: rgb(98,98,98)">=</span>engine,
-<span class="ansi-green-fg">    499</span>         engine_kwargs<span style="color: rgb(98,98,98)">=</span>engine_kwargs,
-<span class="ansi-green-fg">    500</span>     )
-<span class="ansi-green-fg">    501</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> engine <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> engine <span style="color: rgb(98,98,98)">!=</span> io<span style="color: rgb(98,98,98)">.</span>engine:
-<span class="ansi-green-fg">    502</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
-<span class="ansi-green-fg">    503</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Engine should not be specified when passing </span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">    504</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an ExcelFile - ExcelFile already has the engine set</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">    505</span>     )
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1550</span>, in <span class="ansi-cyan-fg">ExcelFile.__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, path_or_buffer, engine, storage_options, engine_kwargs)</span>
-<span class="ansi-green-fg">   1548</span>     ext <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">xls</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1549</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1550</span>     ext <span style="color: rgb(98,98,98)">=</span> inspect_excel_format(
-<span class="ansi-green-fg">   1551</span>         content_or_path<span style="color: rgb(98,98,98)">=</span>path_or_buffer, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options
-<span class="ansi-green-fg">   1552</span>     )
-<span class="ansi-green-fg">   1553</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> ext <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-fg">   1554</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
-<span class="ansi-green-fg">   1555</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Excel file format cannot be determined, you must specify </span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1556</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an engine manually.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">   1557</span>         )
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1402</span>, in <span class="ansi-cyan-fg">inspect_excel_format</span><span class="ansi-blue-intense-fg ansi-bold">(content_or_path, storage_options)</span>
-<span class="ansi-green-fg">   1399</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(content_or_path, <span style="color: rgb(0,135,0)">bytes</span>):
-<span class="ansi-green-fg">   1400</span>     content_or_path <span style="color: rgb(98,98,98)">=</span> BytesIO(content_or_path)
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1402</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> get_handle(
-<span class="ansi-green-fg">   1403</span>     content_or_path, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">rb</span><span style="color: rgb(175,0,0)">"</span>, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options, is_text<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
-<span class="ansi-green-fg">   1404</span> ) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> handle:
-<span class="ansi-green-fg">   1405</span>     stream <span style="color: rgb(98,98,98)">=</span> handle<span style="color: rgb(98,98,98)">.</span>handle
-<span class="ansi-green-fg">   1406</span>     stream<span style="color: rgb(98,98,98)">.</span>seek(<span style="color: rgb(98,98,98)">0</span>)
-
-File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:882</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-intense-fg ansi-bold">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="ansi-green-fg">    873</span>         handle <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">open</span>(
-<span class="ansi-green-fg">    874</span>             handle,
-<span class="ansi-green-fg">    875</span>             ioargs<span style="color: rgb(98,98,98)">.</span>mode,
-<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
-<span class="ansi-green-fg">    878</span>             newline<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">"</span>,
-<span class="ansi-green-fg">    879</span>         )
-<span class="ansi-green-fg">    880</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">    881</span>         <span style="color: rgb(95,135,135)"># Binary mode</span>
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 882</span>         handle <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">open</span>(handle, ioargs<span style="color: rgb(98,98,98)">.</span>mode)
-<span class="ansi-green-fg">    883</span>     handles<span style="color: rgb(98,98,98)">.</span>append(handle)
-<span class="ansi-green-fg">    885</span> <span style="color: rgb(95,135,135)"># Convert BytesIO or file objects passed with an encoding</span>
-
-<span class="ansi-red-intense-fg ansi-bold">FileNotFoundError</span>: [Errno 2] No such file or directory: 'path_to_file.xls'</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b757124d-3c4b-4353-994d-d3f2a17d4bcd">
@@ -7224,13 +7000,13 @@ File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-package
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0fc91359-55f0-461b-89c2-c8bdd8c1e04c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0fc91359-55f0-461b-89c2-c8bdd8c1e04c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
@@ -7294,26 +7070,6 @@ df.to_excel(writer,'Sheet1',float_format = "%0.1f")</div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[11], line 1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> df<span style="color: rgb(98,98,98)">.</span>to_excel(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">path_to_file.xlsx</span><span style="color: rgb(175,0,0)">'</span>)
-<span class="ansi-green-fg">      2</span> <span style="color: rgb(95,135,135)"># 指定 sheet 名, 不要索引</span>
-<span class="ansi-green-fg">      3</span> df<span style="color: rgb(98,98,98)">.</span>to_excel(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">path_to_file.xlsx</span><span style="color: rgb(175,0,0)">'</span>, sheet_name<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Sheet1</span><span style="color: rgb(175,0,0)">'</span>, index<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>)
-
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'df' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=62c02ad5-dc0d-40e4-9515-2205d41914ef">
@@ -7354,7 +7110,7 @@ Cell <span class="ansi-green-intense-fg ansi-bold">In[11], line 1</span>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 18, 2026 09:59:54 UTC">June 18, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 18, 2026 10:53:02 UTC">June 18, 2026</span>
   </span>
 
     
