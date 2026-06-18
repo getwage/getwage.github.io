@@ -5960,7 +5960,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
@@ -5998,41 +5998,118 @@ print(d51)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>         衣着       食品       居住      交通      教育      医疗      设备      杂项
-地区                                                                   
-北京   2229.5   8488.5  15751.4  4979.0  4310.9  3739.7  2387.3  1151.9
-天津   1999.5   8983.7   6946.1  4236.4  3584.4  2991.9  1956.7  1154.9
-河北   1304.8   4675.7   4301.6  2415.7  1984.1  1699.0  1170.4   435.8
-山西   1289.9   3997.2   3331.6  1979.7  2136.2  1820.7   910.7   396.5
-内蒙古  1765.4   5517.3   3943.7  3218.4  2407.7  2108.0  1185.8   597.1
-辽宁   1586.1   5956.5   4417.0  2848.5  2929.3  2434.2  1275.3   756.0
-吉林   1406.8   4675.4   3351.5  2518.1  2436.6  2174.0   948.3   564.7
-黑龙江  1437.6   4781.1   3314.2  2317.4  2444.9  2457.1   884.8   514.4
-上海   2071.8  10952.6  15046.4  5355.7  5495.1  3204.8  2122.8  1355.9
-江苏   1573.4   6847.0   7247.3  3732.2  2946.4  2166.5  1496.4   688.1
-浙江   1877.1   8928.9   8403.2  4552.8  3624.0  2122.6  1715.9   801.3
-安徽   1300.6   6080.8   4281.3  2286.6  2132.8  1489.9  1154.3   411.2
-福建   1319.6   8095.6   6974.9  3019.4  2509.0  1506.8  1269.7   619.3
-江西   1077.6   5215.2   4398.8  2104.3  2094.2  1264.5  1128.6   367.3
-山东   1443.1   5416.8   4370.1  2991.5  2409.7  1816.5  1538.9   440.8
-河南   1226.5   4186.8   3723.1  1976.0  2016.8  1746.1  1101.5   354.9
-湖北   1422.4   5946.8   4769.1  2822.2  2459.6  2230.9  1418.5   497.5
-湖南   1262.2   5771.0   4306.1  2538.5  3017.4  1961.6  1226.2   395.8
-广东   1192.2   9369.2   7329.1  3833.6  3244.4  1770.4  1560.2   695.5
-广西    648.0   5031.2   3493.2  2384.7  2007.0  1616.0   944.1   294.2
-海南    697.7   7122.3   4110.4  2578.2  2413.4  1294.0   932.7   406.2
-重庆   1491.9   6666.7   3851.2  2632.8  2312.2  1925.4  1392.5   501.3
-四川   1213.0   6466.8   3678.8  2576.4  1813.5  1934.9  1201.3   453.7
-贵州    984.0   4110.2   2941.7  2405.6  1865.6  1274.8   873.8   324.3
-云南    822.7   4558.4   3370.6  2439.0  1950.0  1401.4   926.6   311.2
-西藏   1446.3   4792.5   2320.6  2015.2   690.3   519.2   847.7   397.4
-陕西   1227.5   4671.9   3625.3  2154.8  2243.4  1977.4  1151.1   413.3
-甘肃   1125.3   4574.0   3440.4  1972.7  1843.5  1619.3   945.3   358.6
-青海   1359.8   5130.9   3304.0  2587.6  1731.8  1995.6   953.2   481.8
-宁夏   1476.6   4605.2   3245.1  3018.1  2352.4  1929.3  1144.5   525.5
-新疆   1472.1   5042.7   3270.9  2408.1  1876.1  1725.4  1159.5   441.7
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">HTTPError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[2], line 4</span>
+<span class="ansi-green-fg">      2</span> pd<span style="color: rgb(98,98,98)">.</span>set_option(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">display.max_rows</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(98,98,98)">31</span>)                    <span style="color: rgb(95,135,135)">#显示数据框最大行数</span>
+<span class="ansi-green-fg">      3</span> <span style="color: rgb(95,135,135)">#如果不使用本地文件，可以使用以下代码从网络上直接读取数据：</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 4</span> d31<span style="color: rgb(98,98,98)">=</span>pd<span style="color: rgb(98,98,98)">.</span>read_excel(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">http://www.getwage.xyz/courses/multi_variance/cluster/mvsData.xlsx</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">d31</span><span style="color: rgb(175,0,0)">'</span>,index_col<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">0</span>)
+<span class="ansi-green-fg">      5</span> <span style="color: rgb(95,135,135)">#d31=pd.read_excel('mvsData.xlsx','d31',index_col=0);   #读取居民消费支出数据</span>
+<span class="ansi-green-fg">      6</span> d51<span style="color: rgb(98,98,98)">=</span>d31[[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">衣着</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">食品</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">居住</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">交通</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">教育</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">医疗</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">设备</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">杂项</span><span style="color: rgb(175,0,0)">'</span>]] <span style="color: rgb(95,135,135)">#指标体系数据</span>
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:495</span>, in <span class="ansi-cyan-fg">read_excel</span><span class="ansi-blue-intense-fg ansi-bold">(io, sheet_name, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, date_format, thousands, decimal, comment, skipfooter, storage_options, dtype_backend, engine_kwargs)</span>
+<span class="ansi-green-fg">    493</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(io, ExcelFile):
+<span class="ansi-green-fg">    494</span>     should_close <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">True</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 495</span>     io <span style="color: rgb(98,98,98)">=</span> ExcelFile(
+<span class="ansi-green-fg">    496</span>         io,
+<span class="ansi-green-fg">    497</span>         storage_options<span style="color: rgb(98,98,98)">=</span>storage_options,
+<span class="ansi-green-fg">    498</span>         engine<span style="color: rgb(98,98,98)">=</span>engine,
+<span class="ansi-green-fg">    499</span>         engine_kwargs<span style="color: rgb(98,98,98)">=</span>engine_kwargs,
+<span class="ansi-green-fg">    500</span>     )
+<span class="ansi-green-fg">    501</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> engine <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> engine <span style="color: rgb(98,98,98)">!=</span> io<span style="color: rgb(98,98,98)">.</span>engine:
+<span class="ansi-green-fg">    502</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
+<span class="ansi-green-fg">    503</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Engine should not be specified when passing </span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">    504</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an ExcelFile - ExcelFile already has the engine set</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">    505</span>     )
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1550</span>, in <span class="ansi-cyan-fg">ExcelFile.__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, path_or_buffer, engine, storage_options, engine_kwargs)</span>
+<span class="ansi-green-fg">   1548</span>     ext <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">xls</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">   1549</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1550</span>     ext <span style="color: rgb(98,98,98)">=</span> inspect_excel_format(
+<span class="ansi-green-fg">   1551</span>         content_or_path<span style="color: rgb(98,98,98)">=</span>path_or_buffer, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options
+<span class="ansi-green-fg">   1552</span>     )
+<span class="ansi-green-fg">   1553</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> ext <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">   1554</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
+<span class="ansi-green-fg">   1555</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Excel file format cannot be determined, you must specify </span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">   1556</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an engine manually.</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">   1557</span>         )
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1402</span>, in <span class="ansi-cyan-fg">inspect_excel_format</span><span class="ansi-blue-intense-fg ansi-bold">(content_or_path, storage_options)</span>
+<span class="ansi-green-fg">   1399</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(content_or_path, <span style="color: rgb(0,135,0)">bytes</span>):
+<span class="ansi-green-fg">   1400</span>     content_or_path <span style="color: rgb(98,98,98)">=</span> BytesIO(content_or_path)
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1402</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> get_handle(
+<span class="ansi-green-fg">   1403</span>     content_or_path, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">rb</span><span style="color: rgb(175,0,0)">"</span>, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options, is_text<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
+<span class="ansi-green-fg">   1404</span> ) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> handle:
+<span class="ansi-green-fg">   1405</span>     stream <span style="color: rgb(98,98,98)">=</span> handle<span style="color: rgb(98,98,98)">.</span>handle
+<span class="ansi-green-fg">   1406</span>     stream<span style="color: rgb(98,98,98)">.</span>seek(<span style="color: rgb(98,98,98)">0</span>)
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:728</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-intense-fg ansi-bold">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="ansi-green-fg">    725</span>     codecs<span style="color: rgb(98,98,98)">.</span>lookup_error(errors)
+<span class="ansi-green-fg">    727</span> <span style="color: rgb(95,135,135)"># open URLs</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 728</span> ioargs <span style="color: rgb(98,98,98)">=</span> _get_filepath_or_buffer(
+<span class="ansi-green-fg">    729</span>     path_or_buf,
+<span class="ansi-green-fg">    730</span>     encoding<span style="color: rgb(98,98,98)">=</span>encoding,
+<span class="ansi-green-fg">    731</span>     compression<span style="color: rgb(98,98,98)">=</span>compression,
+<span class="ansi-green-fg">    732</span>     mode<span style="color: rgb(98,98,98)">=</span>mode,
+<span class="ansi-green-fg">    733</span>     storage_options<span style="color: rgb(98,98,98)">=</span>storage_options,
+<span class="ansi-green-fg">    734</span> )
+<span class="ansi-green-fg">    736</span> handle <span style="color: rgb(98,98,98)">=</span> ioargs<span style="color: rgb(98,98,98)">.</span>filepath_or_buffer
+<span class="ansi-green-fg">    737</span> handles: <span style="color: rgb(0,135,0)">list</span>[BaseBuffer]
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:384</span>, in <span class="ansi-cyan-fg">_get_filepath_or_buffer</span><span class="ansi-blue-intense-fg ansi-bold">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
+<span class="ansi-green-fg">    382</span> <span style="color: rgb(95,135,135)"># assuming storage_options is to be interpreted as headers</span>
+<span class="ansi-green-fg">    383</span> req_info <span style="color: rgb(98,98,98)">=</span> urllib<span style="color: rgb(98,98,98)">.</span>request<span style="color: rgb(98,98,98)">.</span>Request(filepath_or_buffer, headers<span style="color: rgb(98,98,98)">=</span>storage_options)
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 384</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> urlopen(req_info) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> req:
+<span class="ansi-green-fg">    385</span>     content_encoding <span style="color: rgb(98,98,98)">=</span> req<span style="color: rgb(98,98,98)">.</span>headers<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Content-Encoding</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
+<span class="ansi-green-fg">    386</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> content_encoding <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">gzip</span><span style="color: rgb(175,0,0)">"</span>:
+<span class="ansi-green-fg">    387</span>         <span style="color: rgb(95,135,135)"># Override compression based on Content-Encoding header</span>
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:289</span>, in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
+<span class="ansi-green-fg">    283</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-fg">    284</span> <span style="color: rgb(175,0,0)">Lazy-import wrapper for stdlib urlopen, as that imports a big chunk of</span>
+<span class="ansi-green-fg">    285</span> <span style="color: rgb(175,0,0)">the stdlib.</span>
+<span class="ansi-green-fg">    286</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-fg">    287</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">urllib</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">request</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 289</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> urllib<span style="color: rgb(98,98,98)">.</span>request<span style="color: rgb(98,98,98)">.</span>urlopen(<span style="color: rgb(98,98,98)">*</span>args, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>kwargs)
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:215</span>, in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(url, data, timeout, cafile, capath, cadefault, context)</span>
+<span class="ansi-green-fg">    213</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg">    214</span>     opener <span style="color: rgb(98,98,98)">=</span> _opener
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 215</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> opener<span style="color: rgb(98,98,98)">.</span>open(url, data, timeout)
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:521</span>, in <span class="ansi-cyan-fg">OpenerDirector.open</span><span class="ansi-blue-intense-fg ansi-bold">(self, fullurl, data, timeout)</span>
+<span class="ansi-green-fg">    519</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> processor <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>process_response<span style="color: rgb(98,98,98)">.</span>get(protocol, []):
+<span class="ansi-green-fg">    520</span>     meth <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(processor, meth_name)
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 521</span>     response <span style="color: rgb(98,98,98)">=</span> meth(req, response)
+<span class="ansi-green-fg">    523</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> response
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:630</span>, in <span class="ansi-cyan-fg">HTTPErrorProcessor.http_response</span><span class="ansi-blue-intense-fg ansi-bold">(self, request, response)</span>
+<span class="ansi-green-fg">    627</span> <span style="color: rgb(95,135,135)"># According to RFC 2616, "2xx" code indicates that the client's</span>
+<span class="ansi-green-fg">    628</span> <span style="color: rgb(95,135,135)"># request was successfully received, understood, and accepted.</span>
+<span class="ansi-green-fg">    629</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> (<span style="color: rgb(98,98,98)">200</span> <span style="color: rgb(98,98,98)">&lt;</span><span style="color: rgb(98,98,98)">=</span> code <span style="color: rgb(98,98,98)">&lt;</span> <span style="color: rgb(98,98,98)">300</span>):
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 630</span>     response <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>parent<span style="color: rgb(98,98,98)">.</span>error(
+<span class="ansi-green-fg">    631</span>         <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">http</span><span style="color: rgb(175,0,0)">'</span>, request, response, code, msg, hdrs)
+<span class="ansi-green-fg">    633</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> response
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:559</span>, in <span class="ansi-cyan-fg">OpenerDirector.error</span><span class="ansi-blue-intense-fg ansi-bold">(self, proto, *args)</span>
+<span class="ansi-green-fg">    557</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> http_err:
+<span class="ansi-green-fg">    558</span>     args <span style="color: rgb(98,98,98)">=</span> (<span style="color: rgb(0,135,0)">dict</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">default</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">http_error_default</span><span style="color: rgb(175,0,0)">'</span>) <span style="color: rgb(98,98,98)">+</span> orig_args
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 559</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_call_chain(<span style="color: rgb(98,98,98)">*</span>args)
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:492</span>, in <span class="ansi-cyan-fg">OpenerDirector._call_chain</span><span class="ansi-blue-intense-fg ansi-bold">(self, chain, kind, meth_name, *args)</span>
+<span class="ansi-green-fg">    490</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> handler <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> handlers:
+<span class="ansi-green-fg">    491</span>     func <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(handler, meth_name)
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 492</span>     result <span style="color: rgb(98,98,98)">=</span> func(<span style="color: rgb(98,98,98)">*</span>args)
+<span class="ansi-green-fg">    493</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">    494</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> result
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:639</span>, in <span class="ansi-cyan-fg">HTTPDefaultErrorHandler.http_error_default</span><span class="ansi-blue-intense-fg ansi-bold">(self, req, fp, code, msg, hdrs)</span>
+<span class="ansi-green-fg">    638</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span><span style="color: rgb(188,188,188)"> </span><span style="color: rgb(0,0,255)">http_error_default</span>(<span style="color: rgb(0,135,0)">self</span>, req, fp, code, msg, hdrs):
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 639</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> HTTPError(req<span style="color: rgb(98,98,98)">.</span>full_url, code, msg, hdrs, fp)
+
+<span class="ansi-red-intense-fg ansi-bold">HTTPError</span>: HTTP Error 404: Not Found</pre>
 </div>
 </div>
 </div>
@@ -6066,7 +6143,7 @@ print(d51)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-3">
@@ -6099,7 +6176,7 @@ def bz(x):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-4">
@@ -6129,41 +6206,16 @@ print(Z)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>         衣着      食品      居住      交通      教育      医疗      设备      杂项
-地区                                                                 
-北京   100.00   78.74  100.00   93.32   85.21  100.00  100.00   88.47
-天津    91.27   83.02   60.66   80.15   76.14   86.07   83.22   88.64
-河北    64.92   45.85   48.85   47.86   56.16   61.98   52.58   48.00
-山西    64.35   40.00   44.52   40.12   58.06   64.25   42.46   45.78
-内蒙古   82.39   53.11   47.25   62.09   61.45   69.60   53.18   57.12
-辽宁    75.59   56.90   49.37   55.53   67.96   75.68   56.66   66.10
-吉林    68.79   45.85   44.61   49.67   61.81   70.83   43.92   55.29
-黑龙江   69.96   46.76   44.44   46.11   61.91   76.10   41.45   52.44
-上海    94.02  100.00   96.85  100.00  100.00   90.03   89.69  100.00
-江苏    75.11   64.58   62.01   71.21   68.17   70.69   65.28   62.26
-浙江    86.63   82.54   67.17   85.76   76.63   69.87   73.83   68.66
-安徽    64.76   57.97   48.76   45.57   58.01   58.08   51.95   46.61
-福建    65.48   75.35   60.79   58.56   62.71   58.40   56.45   58.37
-江西    56.30   50.51   49.28   42.33   57.53   53.89   50.95   44.13
-山东    70.17   52.25   49.16   58.07   61.47   64.17   66.94   48.28
-河南    61.95   41.64   46.27   40.06   56.56   62.86   49.89   43.43
-湖北    69.38   56.82   50.94   55.07   62.09   71.89   62.24   51.49
-湖南    63.30   55.30   48.87   50.03   69.06   66.87   54.75   45.74
-广东    60.65   86.34   62.37   73.00   71.89   63.31   67.77   62.68
-广西    40.00   48.92   45.24   47.31   56.44   60.43   43.76   40.00
-海南    41.89   66.96   48.00   50.74   61.52   54.44   43.31   46.33
-重庆    72.02   63.03   46.84   51.71   60.25   66.20   61.23   51.70
-四川    61.44   61.30   46.07   50.71   54.03   66.38   53.78   49.01
-贵州    52.75   40.97   42.77   47.68   54.68   54.08   41.02   41.70
-云南    46.63   44.84   44.69   48.27   55.73   56.44   43.07   40.96
-西藏    70.29   46.86   40.00   40.75   40.00   40.00   40.00   45.83
-陕西    61.99   45.82   45.83   43.23   59.39   67.17   51.82   46.73
-甘肃    58.11   44.98   45.00   40.00   54.40   60.50   43.80   43.64
-青海    67.00   49.78   44.39   50.91   53.01   67.51   44.11   50.60
-宁夏    71.44   45.24   44.13   58.54   60.76   66.27   51.57   53.07
-新疆    71.27   49.02   44.25   47.72   54.81   62.47   52.15   48.34
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[4], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> Z<span style="color: rgb(98,98,98)">=</span>d51<span style="color: rgb(98,98,98)">.</span>apply(bz,<span style="color: rgb(98,98,98)">0</span>);Z    <span style="color: rgb(95,135,135)">#数据无量纲化</span>
+<span class="ansi-green-fg">      2</span> pd<span style="color: rgb(98,98,98)">.</span>set_option(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">display.precision</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(98,98,98)">2</span>) <span style="color: rgb(95,135,135)">#设置数据框输出精度，2位小数</span>
+<span class="ansi-green-fg">      3</span> <span style="color: rgb(0,135,0)">print</span>(Z)
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'd51' is not defined</pre>
 </div>
 </div>
 </div>
@@ -6186,7 +6238,7 @@ print(Z)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-5">
@@ -6251,7 +6303,7 @@ def AHP(A):  #A为判断矩阵
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-6">
@@ -6291,7 +6343,7 @@ A_W</div>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array([0.6667, 0.3333])</pre>
 </div>
@@ -6305,7 +6357,7 @@ A_W</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-7">
@@ -6348,7 +6400,7 @@ CR&lt;=0.1，一致性可以接受!
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array([0.0914, 0.45  , 0.3267, 0.1319])</pre>
 </div>
@@ -6362,7 +6414,7 @@ CR&lt;=0.1，一致性可以接受!
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
@@ -6405,7 +6457,7 @@ CR&lt;=0.1，一致性可以接受!
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array([0.4428, 0.3004, 0.1592, 0.0976])</pre>
 </div>
@@ -6441,7 +6493,7 @@ CR&lt;=0.1，一致性可以接受!
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
@@ -6467,20 +6519,17 @@ S=Z.mean(axis=1);S  #按列求均值</div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>地区
-北京    93.22
-天津    81.15
-河北    53.27
-山西    49.94
-      ...  
-甘肃    48.80
-青海    53.41
-宁夏    56.38
-新疆    53.75
-Length: 31, dtype: float64</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[9], line 2</span>
+<span class="ansi-green-fg">      1</span> pd<span style="color: rgb(98,98,98)">.</span>set_option(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">display.max_rows</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(98,98,98)">8</span>)
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span> S<span style="color: rgb(98,98,98)">=</span>Z<span style="color: rgb(98,98,98)">.</span>mean(axis<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">1</span>);S
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'Z' is not defined</pre>
 </div>
 </div>
 </div>
@@ -6492,7 +6541,7 @@ Length: 31, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
@@ -6516,10 +6565,16 @@ Length: 31, dtype: float64</pre>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>22</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[10], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span style="color: rgb(0,135,0)">len</span>(S[S<span style="color: rgb(98,98,98)">&lt;</span><span style="color: rgb(98,98,98)">60</span>])
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'S' is not defined</pre>
 </div>
 </div>
 </div>
@@ -6531,7 +6586,7 @@ Length: 31, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
@@ -6559,19 +6614,15 @@ print(Sr)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>地区
-北京     2
-天津     3
-河北    21
-山西    26
-      ..
-甘肃    27
-青海    20
-宁夏    14
-新疆    19
-Length: 31, dtype: int32
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[11], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> Sr<span style="color: rgb(98,98,98)">=</span>S<span style="color: rgb(98,98,98)">.</span>rank(ascending<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>)<span style="color: rgb(98,98,98)">.</span>astype(<span style="color: rgb(0,135,0)">int</span>) <span style="color: rgb(95,135,135)">#综合排名</span>
+<span class="ansi-green-fg">      2</span> <span style="color: rgb(0,135,0)">print</span>(Sr)
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'S' is not defined</pre>
 </div>
 </div>
 </div>
@@ -6583,7 +6634,7 @@ Length: 31, dtype: int32
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-12">
@@ -6613,41 +6664,15 @@ print(pd.DataFrame({'综合评分':S,'综合排名':Sr}))
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>      综合评分  综合排名
-地区              
-北京   93.22     2
-天津   81.15     3
-河北   53.27    21
-山西   49.94    26
-内蒙古  60.77     9
-辽宁   62.97     7
-吉林   55.10    16
-黑龙江  54.90    17
-上海   96.32     1
-江苏   67.41     6
-浙江   76.39     4
-安徽   53.96    18
-福建   62.01     8
-江西   50.61    24
-山东   58.81    12
-河南   50.33    25
-湖北   59.99    10
-湖南   56.74    13
-广东   68.50     5
-广西   47.76    28
-海南   51.65    23
-重庆   59.12    11
-四川   55.34    15
-贵州   46.96    30
-云南   47.58    29
-西藏   45.47    31
-陕西   52.75    22
-甘肃   48.80    27
-青海   53.41    20
-宁夏   56.38    14
-新疆   53.75    19
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[12], line 2</span>
+<span class="ansi-green-fg">      1</span> pd<span style="color: rgb(98,98,98)">.</span>set_option(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">display.max_rows</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(98,98,98)">31</span>)
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span> <span style="color: rgb(0,135,0)">print</span>(pd<span style="color: rgb(98,98,98)">.</span>DataFrame({<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">综合评分</span><span style="color: rgb(175,0,0)">'</span>:S,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">综合排名</span><span style="color: rgb(175,0,0)">'</span>:Sr}))
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'S' is not defined</pre>
 </div>
 </div>
 </div>
@@ -6670,7 +6695,7 @@ print(pd.DataFrame({'综合评分':S,'综合排名':Sr}))
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-13">
@@ -6702,41 +6727,17 @@ print(S2)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>      A1得分  A1排名
-地区              
-北京   89.55     2
-天津   76.09     4
-河北   48.84    21
-山西   43.72    30
-内蒙古  55.06    12
-辽宁   55.97    10
-吉林   48.04    22
-黑龙江  48.04    23
-上海   98.42     1
-江苏   65.58     7
-浙江   78.32     3
-安徽   53.95    14
-福建   67.48     6
-江西   49.56    18
-山东   53.64    15
-河南   44.80    29
-湖北   55.81    11
-湖南   53.24    16
-广东   74.40     5
-广西   46.69    25
-海南   56.33     9
-重庆   57.07     8
-四川   54.94    13
-贵州   43.52    31
-云南   45.41    28
-西藏   45.96    26
-陕西   46.96    24
-甘肃   45.53    27
-青海   49.74    17
-宁夏   49.03    20
-新疆   49.32    19
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[13], line 2</span>
+<span class="ansi-green-fg">      1</span> S2<span style="color: rgb(98,98,98)">=</span>pd<span style="color: rgb(98,98,98)">.</span>DataFrame()
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span> S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A1得分</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">=</span>Z[[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">衣着</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">食品</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">居住</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">交通</span><span style="color: rgb(175,0,0)">'</span>]]<span style="color: rgb(98,98,98)">.</span>dot(B1_W)        <span style="color: rgb(95,135,135)">#常规消费A1得分</span>
+<span class="ansi-green-fg">      3</span> S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A1排名</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">=</span>S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A1得分</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">.</span>rank(ascending<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>)<span style="color: rgb(98,98,98)">.</span>astype(<span style="color: rgb(0,135,0)">int</span>)   <span style="color: rgb(95,135,135)">#常规消费A2排序</span>
+<span class="ansi-green-fg">      4</span> <span style="color: rgb(0,135,0)">print</span>(S2)
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'Z' is not defined</pre>
 </div>
 </div>
 </div>
@@ -6748,7 +6749,7 @@ print(S2)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-14">
@@ -6778,41 +6779,16 @@ print(S2)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>      A1得分  A1排名   A2得分  A2排名
-地区                           
-北京   89.55     2  92.33     2
-天津   76.09     4  81.47     3
-河北   48.84    21  56.54    19
-山西   43.72    30  56.23    20
-内蒙古  55.06    12  62.16    10
-辽宁   55.97    10  68.30     5
-吉林   48.04    22  61.03    14
-黑龙江  48.04    23  61.99    11
-上海   98.42     1  95.37     1
-江苏   65.58     7  67.89     6
-浙江   78.32     3  73.38     4
-安徽   53.95    14  55.96    23
-福建   67.48     6  59.99    16
-江西   49.56    18  54.08    26
-山东   53.64    15  61.86    12
-河南   44.80    29  56.11    21
-湖北   55.81    11  64.03     8
-湖南   53.24    16  63.85     9
-广东   74.40     5  67.76     7
-广西   46.69    25  54.02    27
-海南   56.33     9  55.01    25
-重庆   57.07     8  61.36    13
-四川   54.94    13  57.21    18
-贵州   43.52    31  51.06    30
-云南   45.41    28  52.49    29
-西藏   45.96    26  40.57    31
-陕西   46.96    24  59.29    17
-甘肃   45.53    27  53.49    28
-青海   49.74    17  55.71    24
-宁夏   49.03    20  60.20    15
-新疆   49.32    19  56.06    22
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[14], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A2得分</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">=</span>Z[[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">教育</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">医疗</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">设备</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">杂项</span><span style="color: rgb(175,0,0)">'</span>]]<span style="color: rgb(98,98,98)">.</span>dot(B2_W)        <span style="color: rgb(95,135,135)">#附加消费A2得分</span>
+<span class="ansi-green-fg">      2</span> S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A2排名</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">=</span>S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A2得分</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">.</span>rank(ascending<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>)<span style="color: rgb(98,98,98)">.</span>astype(<span style="color: rgb(0,135,0)">int</span>)   <span style="color: rgb(95,135,135)">#附加消费A2排序</span>
+<span class="ansi-green-fg">      3</span> <span style="color: rgb(0,135,0)">print</span>(S2)
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'Z' is not defined</pre>
 </div>
 </div>
 </div>
@@ -6824,7 +6800,7 @@ print(S2)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-15">
@@ -6856,41 +6832,38 @@ print(S2)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>      A1得分  A1排名   A2得分  A2排名   层次得分  层次排名
-地区                                        
-北京   89.55     2  92.33     2  90.48     2
-天津   76.09     4  81.47     3  77.88     3
-河北   48.84    21  56.54    19  51.41    22
-山西   43.72    30  56.23    20  47.89    28
-内蒙古  55.06    12  62.16    10  57.42    11
-辽宁   55.97    10  68.30     5  60.08     8
-吉林   48.04    22  61.03    14  52.37    19
-黑龙江  48.04    23  61.99    11  52.69    18
-上海   98.42     1  95.37     1  97.40     1
-江苏   65.58     7  67.89     6  66.35     6
-浙江   78.32     3  73.38     4  76.67     4
-安徽   53.95    14  55.96    23  54.62    16
-福建   67.48     6  59.99    16  64.99     7
-江西   49.56    18  54.08    26  51.07    24
-山东   53.64    15  61.86    12  56.38    13
-河南   44.80    29  56.11    21  48.57    26
-湖北   55.81    11  64.03     8  58.55     9
-湖南   53.24    16  63.85     9  56.77    12
-广东   74.40     5  67.76     7  72.19     5
-广西   46.69    25  54.02    27  49.13    25
-海南   56.33     9  55.01    25  55.89    14
-重庆   57.07     8  61.36    13  58.50    10
-四川   54.94    13  57.21    18  55.70    15
-贵州   43.52    31  51.06    30  46.03    30
-云南   45.41    28  52.49    29  47.77    29
-西藏   45.96    26  40.57    31  44.16    31
-陕西   46.96    24  59.29    17  51.07    23
-甘肃   45.53    27  53.49    28  48.18    27
-青海   49.74    17  55.71    24  51.73    20
-宁夏   49.03    20  60.20    15  52.75    17
-新疆   49.32    19  56.06    22  51.57    21
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[15], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">层次得分</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">=</span>S2[[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A1得分</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A2得分</span><span style="color: rgb(175,0,0)">'</span>]]<span style="color: rgb(98,98,98)">.</span>dot(A_W)                 <span style="color: rgb(95,135,135)">#A层次综合得分</span>
+<span class="ansi-green-fg">      2</span> S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">层次排名</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">=</span>S2[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">层次得分</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">.</span>rank(ascending<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>)<span style="color: rgb(98,98,98)">.</span>astype(<span style="color: rgb(0,135,0)">int</span>) <span style="color: rgb(95,135,135)">#A层次综合排序</span>
+<span class="ansi-green-fg">      3</span> pd<span style="color: rgb(98,98,98)">.</span>set_option(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">display.max_rows</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(98,98,98)">31</span>) 
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\core\frame.py:4119</span>, in <span class="ansi-cyan-fg">DataFrame.__getitem__</span><span class="ansi-blue-intense-fg ansi-bold">(self, key)</span>
+<span class="ansi-green-fg">   4117</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> is_iterator(key):
+<span class="ansi-green-fg">   4118</span>         key <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">list</span>(key)
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 4119</span>     indexer <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>columns<span style="color: rgb(98,98,98)">.</span>_get_indexer_strict(key, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">columns</span><span style="color: rgb(175,0,0)">"</span>)[<span style="color: rgb(98,98,98)">1</span>]
+<span class="ansi-green-fg">   4121</span> <span style="color: rgb(95,135,135)"># take() does not accept boolean indexers</span>
+<span class="ansi-green-fg">   4122</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(indexer, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">dtype</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>) <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(0,135,0)">bool</span>:
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\core\indexes\base.py:6212</span>, in <span class="ansi-cyan-fg">Index._get_indexer_strict</span><span class="ansi-blue-intense-fg ansi-bold">(self, key, axis_name)</span>
+<span class="ansi-green-fg">   6209</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg">   6210</span>     keyarr, indexer, new_indexer <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_reindex_non_unique(keyarr)
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 6212</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_raise_if_missing(keyarr, indexer, axis_name)
+<span class="ansi-green-fg">   6214</span> keyarr <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>take(indexer)
+<span class="ansi-green-fg">   6215</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(key, Index):
+<span class="ansi-green-fg">   6216</span>     <span style="color: rgb(95,135,135)"># GH 42790 - Preserve name from an Index</span>
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\core\indexes\base.py:6261</span>, in <span class="ansi-cyan-fg">Index._raise_if_missing</span><span class="ansi-blue-intense-fg ansi-bold">(self, key, indexer, axis_name)</span>
+<span class="ansi-green-fg">   6259</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> nmissing:
+<span class="ansi-green-fg">   6260</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> nmissing <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(0,135,0)">len</span>(indexer):
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 6261</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">KeyError</span>(<span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">None of [</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>key<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">] are in the [</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>axis_name<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">]</span><span style="color: rgb(175,0,0)">"</span>)
+<span class="ansi-green-fg">   6263</span>     not_found <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">list</span>(ensure_index(key)[missing_mask<span style="color: rgb(98,98,98)">.</span>nonzero()[<span style="color: rgb(98,98,98)">0</span>]]<span style="color: rgb(98,98,98)">.</span>unique())
+<span class="ansi-green-fg">   6264</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">KeyError</span>(<span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">"</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>not_found<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)"> not in index</span><span style="color: rgb(175,0,0)">"</span>)
+
+<span class="ansi-red-intense-fg ansi-bold">KeyError</span>: "None of [Index(['A1得分', 'A2得分'], dtype='object')] are in the [columns]"</pre>
 </div>
 </div>
 </div>
@@ -6902,7 +6875,7 @@ print(S2)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-16">
@@ -6930,41 +6903,15 @@ print(S2)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>      综合评分  综合排名   层次得分  层次排名
-地区                           
-北京   93.22     2  90.48     2
-天津   81.15     3  77.88     3
-河北   53.27    21  51.41    22
-山西   49.94    26  47.89    28
-内蒙古  60.77     9  57.42    11
-辽宁   62.97     7  60.08     8
-吉林   55.10    16  52.37    19
-黑龙江  54.90    17  52.69    18
-上海   96.32     1  97.40     1
-江苏   67.41     6  66.35     6
-浙江   76.39     4  76.67     4
-安徽   53.96    18  54.62    16
-福建   62.01     8  64.99     7
-江西   50.61    24  51.07    24
-山东   58.81    12  56.38    13
-河南   50.33    25  48.57    26
-湖北   59.99    10  58.55     9
-湖南   56.74    13  56.77    12
-广东   68.50     5  72.19     5
-广西   47.76    28  49.13    25
-海南   51.65    23  55.89    14
-重庆   59.12    11  58.50    10
-四川   55.34    15  55.70    15
-贵州   46.96    30  46.03    30
-云南   47.58    29  47.77    29
-西藏   45.47    31  44.16    31
-陕西   52.75    22  51.07    23
-甘肃   48.80    27  48.18    27
-青海   53.41    20  51.73    20
-宁夏   56.38    14  52.75    17
-新疆   53.75    19  51.57    21
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[16], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span style="color: rgb(0,135,0)">print</span>(pd<span style="color: rgb(98,98,98)">.</span>DataFrame({<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">综合评分</span><span style="color: rgb(175,0,0)">'</span>:S,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">综合排名</span><span style="color: rgb(175,0,0)">'</span>:Sr,
+<span class="ansi-green-fg">      2</span>               <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">层次得分</span><span style="color: rgb(175,0,0)">'</span>:S2<span style="color: rgb(98,98,98)">.</span>层次得分,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">层次排名</span><span style="color: rgb(175,0,0)">'</span>:S2<span style="color: rgb(98,98,98)">.</span>层次排名}))
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'S' is not defined</pre>
 </div>
 </div>
 </div>
@@ -6987,7 +6934,7 @@ print(S2)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-17">
@@ -7029,7 +6976,7 @@ CR&lt;=0.1，一致性可以接受!
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array([0.637 , 0.2583, 0.1047])</pre>
 </div>
@@ -7043,7 +6990,7 @@ CR&lt;=0.1，一致性可以接受!
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-18">
@@ -7088,7 +7035,7 @@ CR&lt;=0.1，一致性可以接受!
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array([0.4481, 0.1427, 0.0909, 0.2205, 0.0584, 0.0394])</pre>
 </div>
@@ -7102,7 +7049,7 @@ CR&lt;=0.1，一致性可以接受!
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-19">
@@ -7147,7 +7094,7 @@ CR&lt;=0.1，一致性可以接受!
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array([0.5059, 0.2082, 0.1418, 0.0677, 0.0451, 0.0313])</pre>
 </div>
@@ -7161,7 +7108,7 @@ CR&lt;=0.1，一致性可以接受!
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-20">
@@ -7213,7 +7160,7 @@ CR&lt;=0.1，一致性可以接受!
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>array([0.2678, 0.0545, 0.173 , 0.0358, 0.1654, 0.0358, 0.2678])</pre>
 </div>
@@ -7227,7 +7174,7 @@ CR&lt;=0.1，一致性可以接受!
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-21">
@@ -7257,514 +7204,119 @@ Case5</div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">HTTPError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[21], line 3</span>
+<span class="ansi-green-fg">      1</span> pd<span style="color: rgb(98,98,98)">.</span>set_option(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">display.max_rows</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(98,98,98)">21</span>)
+<span class="ansi-green-fg">      2</span> <span style="color: rgb(95,135,135)">#在网站上获取第五个案例数据，可以使用下面链接</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span> Case5<span style="color: rgb(98,98,98)">=</span>pd<span style="color: rgb(98,98,98)">.</span>read_excel(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">http://www.getwage.xyz/courses/multi_variance/cluster/mvsCase.xlsx</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Case5</span><span style="color: rgb(175,0,0)">'</span>,index_col<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">0</span>)
+<span class="ansi-green-fg">      4</span> Case5
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:495</span>, in <span class="ansi-cyan-fg">read_excel</span><span class="ansi-blue-intense-fg ansi-bold">(io, sheet_name, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skiprows, nrows, na_values, keep_default_na, na_filter, verbose, parse_dates, date_parser, date_format, thousands, decimal, comment, skipfooter, storage_options, dtype_backend, engine_kwargs)</span>
+<span class="ansi-green-fg">    493</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(io, ExcelFile):
+<span class="ansi-green-fg">    494</span>     should_close <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">True</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 495</span>     io <span style="color: rgb(98,98,98)">=</span> ExcelFile(
+<span class="ansi-green-fg">    496</span>         io,
+<span class="ansi-green-fg">    497</span>         storage_options<span style="color: rgb(98,98,98)">=</span>storage_options,
+<span class="ansi-green-fg">    498</span>         engine<span style="color: rgb(98,98,98)">=</span>engine,
+<span class="ansi-green-fg">    499</span>         engine_kwargs<span style="color: rgb(98,98,98)">=</span>engine_kwargs,
+<span class="ansi-green-fg">    500</span>     )
+<span class="ansi-green-fg">    501</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> engine <span class="ansi-bold" style="color: rgb(175,0,255)">and</span> engine <span style="color: rgb(98,98,98)">!=</span> io<span style="color: rgb(98,98,98)">.</span>engine:
+<span class="ansi-green-fg">    502</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
+<span class="ansi-green-fg">    503</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Engine should not be specified when passing </span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">    504</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an ExcelFile - ExcelFile already has the engine set</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">    505</span>     )
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>B11</th>
-<th>B12</th>
-<th>B13</th>
-<th>B14</th>
-<th>B15</th>
-<th>B16</th>
-<th>B21</th>
-<th>B22</th>
-<th>B23</th>
-<th>B24</th>
-<th>B25</th>
-<th>B26</th>
-<th>B31</th>
-<th>B32</th>
-<th>B33</th>
-<th>B34</th>
-<th>B35</th>
-<th>B36</th>
-<th>B37</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>广州</th>
-<td>705</td>
-<td>2539</td>
-<td>3155</td>
-<td>2706</td>
-<td>3735</td>
-<td>5855</td>
-<td>0.17</td>
-<td>0.28</td>
-<td>3.80e-03</td>
-<td>0.33</td>
-<td>0.22</td>
-<td>-0.01</td>
-<td>36</td>
-<td>18</td>
-<td>8</td>
-<td>8</td>
-<td>28</td>
-<td>30</td>
-<td>19</td>
-</tr>
-<tr>
-<th>深圳</th>
-<td>1263</td>
-<td>4952</td>
-<td>5279</td>
-<td>14583</td>
-<td>6766</td>
-<td>8390</td>
-<td>0.38</td>
-<td>0.43</td>
-<td>1.46e-01</td>
-<td>0.75</td>
-<td>0.19</td>
-<td>0.21</td>
-<td>56</td>
-<td>62</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>2</td>
-<td>29</td>
-</tr>
-<tr>
-<th>珠海</th>
-<td>63</td>
-<td>596</td>
-<td>592</td>
-<td>401</td>
-<td>929</td>
-<td>788</td>
-<td>0.50</td>
-<td>0.65</td>
-<td>1.21e-01</td>
-<td>0.54</td>
-<td>0.25</td>
-<td>-0.05</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>汕头</th>
-<td>52</td>
-<td>403</td>
-<td>1569</td>
-<td>160</td>
-<td>689</td>
-<td>2803</td>
-<td>0.33</td>
-<td>0.15</td>
-<td>-1.69e-01</td>
-<td>0.55</td>
-<td>0.42</td>
-<td>0.32</td>
-<td>16</td>
-<td>12</td>
-<td>0</td>
-<td>0</td>
-<td>4</td>
-<td>4</td>
-<td>7</td>
-</tr>
-<tr>
-<th>韶关</th>
-<td>14</td>
-<td>170</td>
-<td>41</td>
-<td>85</td>
-<td>272</td>
-<td>104</td>
-<td>1.33</td>
-<td>1.18</td>
-<td>3.67e-01</td>
-<td>0.18</td>
-<td>0.47</td>
-<td>1.26</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>9</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>河源</th>
-<td>1</td>
-<td>25</td>
-<td>15</td>
-<td>10</td>
-<td>42</td>
-<td>84</td>
-<td>-0.50</td>
-<td>-0.24</td>
-<td>-7.12e-01</td>
-<td>-0.41</td>
-<td>0.40</td>
-<td>1.33</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>梅州</th>
-<td>24</td>
-<td>47</td>
-<td>62</td>
-<td>30</td>
-<td>73</td>
-<td>100</td>
-<td>1.67</td>
-<td>0.27</td>
-<td>-1.62e-01</td>
-<td>-0.06</td>
-<td>0.33</td>
-<td>-0.03</td>
-<td>2</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-</tr>
-<tr>
-<th>惠州</th>
-<td>21</td>
-<td>301</td>
-<td>319</td>
-<td>75</td>
-<td>377</td>
-<td>425</td>
-<td>0.24</td>
-<td>0.17</td>
-<td>-1.52e-01</td>
-<td>-0.70</td>
-<td>0.11</td>
-<td>-0.06</td>
-<td>4</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>汕尾</th>
-<td>5</td>
-<td>20</td>
-<td>94</td>
-<td>28</td>
-<td>43</td>
-<td>170</td>
-<td>0.00</td>
-<td>0.67</td>
-<td>1.46e-01</td>
-<td>1.80</td>
-<td>1.05</td>
-<td>0.32</td>
-<td>4</td>
-<td>4</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>3</td>
-</tr>
-<tr>
-<th>东莞</th>
-<td>28</td>
-<td>1729</td>
-<td>3115</td>
-<td>553</td>
-<td>2603</td>
-<td>6723</td>
-<td>0.17</td>
-<td>0.55</td>
-<td>5.76e-01</td>
-<td>1.26</td>
-<td>0.32</td>
-<td>0.50</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>中山</th>
-<td>17</td>
-<td>850</td>
-<td>1568</td>
-<td>192</td>
-<td>1263</td>
-<td>2794</td>
-<td>-0.41</td>
-<td>0.52</td>
-<td>3.16e-02</td>
-<td>0.38</td>
-<td>0.28</td>
-<td>0.23</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>江门</th>
-<td>41</td>
-<td>583</td>
-<td>1390</td>
-<td>200</td>
-<td>802</td>
-<td>2279</td>
-<td>0.08</td>
-<td>0.33</td>
-<td>2.89e-01</td>
-<td>0.89</td>
-<td>0.19</td>
-<td>0.14</td>
-<td>32</td>
-<td>21</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>5</td>
-</tr>
-<tr>
-<th>佛山</th>
-<td>132</td>
-<td>2712</td>
-<td>6221</td>
-<td>2016</td>
-<td>5248</td>
-<td>11790</td>
-<td>0.59</td>
-<td>0.49</td>
-<td>-8.53e-02</td>
-<td>0.96</td>
-<td>0.38</td>
-<td>-0.05</td>
-<td>12</td>
-<td>34</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>7</td>
-</tr>
-<tr>
-<th>阳江</th>
-<td>1</td>
-<td>101</td>
-<td>397</td>
-<td>24</td>
-<td>156</td>
-<td>625</td>
-<td>-0.80</td>
-<td>0.29</td>
-<td>-3.41e-02</td>
-<td>0.00</td>
-<td>0.24</td>
-<td>0.14</td>
-<td>12</td>
-<td>6</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>湛江</th>
-<td>22</td>
-<td>118</td>
-<td>194</td>
-<td>112</td>
-<td>153</td>
-<td>318</td>
-<td>0.29</td>
-<td>0.30</td>
-<td>3.19e-02</td>
-<td>0.38</td>
-<td>0.09</td>
-<td>0.26</td>
-<td>3</td>
-<td>5</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>茂名</th>
-<td>14</td>
-<td>90</td>
-<td>84</td>
-<td>22</td>
-<td>118</td>
-<td>174</td>
-<td>1.80</td>
-<td>1.00</td>
-<td>5.56e-01</td>
-<td>-0.24</td>
-<td>-0.21</td>
-<td>0.28</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>肇庆</th>
-<td>5</td>
-<td>99</td>
-<td>102</td>
-<td>41</td>
-<td>171</td>
-<td>163</td>
-<td>-0.17</td>
-<td>0.03</td>
-<td>2.00e-01</td>
-<td>0.37</td>
-<td>0.26</td>
-<td>0.19</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>清远</th>
-<td>1</td>
-<td>54</td>
-<td>41</td>
-<td>20</td>
-<td>64</td>
-<td>86</td>
-<td>-0.83</td>
-<td>0.69</td>
-<td>-1.09e-01</td>
-<td>-0.17</td>
-<td>-0.21</td>
-<td>0.39</td>
-<td>1</td>
-<td>1</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>潮州</th>
-<td>8</td>
-<td>118</td>
-<td>787</td>
-<td>28</td>
-<td>187</td>
-<td>1415</td>
-<td>-0.11</td>
-<td>0.79</td>
-<td>1.82e-01</td>
-<td>0.04</td>
-<td>0.29</td>
-<td>0.44</td>
-<td>9</td>
-<td>5</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>揭阳</th>
-<td>15</td>
-<td>93</td>
-<td>348</td>
-<td>32</td>
-<td>145</td>
-<td>470</td>
-<td>1.50</td>
-<td>0.06</td>
-<td>1.45e-01</td>
-<td>-0.06</td>
-<td>0.51</td>
-<td>0.20</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<th>云浮</th>
-<td>8</td>
-<td>38</td>
-<td>54</td>
-<td>29</td>
-<td>47</td>
-<td>91</td>
-<td>0.60</td>
-<td>0.73</td>
-<td>-2.60e-01</td>
-<td>0.61</td>
-<td>-0.06</td>
-<td>0.14</td>
-<td>3</td>
-<td>3</td>
-<td>1</td>
-<td>1</td>
-<td>4</td>
-<td>1</td>
-<td>0</td>
-</tr>
-</tbody>
-</table>
-</div>
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1550</span>, in <span class="ansi-cyan-fg">ExcelFile.__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, path_or_buffer, engine, storage_options, engine_kwargs)</span>
+<span class="ansi-green-fg">   1548</span>     ext <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">xls</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">   1549</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1550</span>     ext <span style="color: rgb(98,98,98)">=</span> inspect_excel_format(
+<span class="ansi-green-fg">   1551</span>         content_or_path<span style="color: rgb(98,98,98)">=</span>path_or_buffer, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options
+<span class="ansi-green-fg">   1552</span>     )
+<span class="ansi-green-fg">   1553</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> ext <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">   1554</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
+<span class="ansi-green-fg">   1555</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Excel file format cannot be determined, you must specify </span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">   1556</span>             <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">an engine manually.</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-fg">   1557</span>         )
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\excel\_base.py:1402</span>, in <span class="ansi-cyan-fg">inspect_excel_format</span><span class="ansi-blue-intense-fg ansi-bold">(content_or_path, storage_options)</span>
+<span class="ansi-green-fg">   1399</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(content_or_path, <span style="color: rgb(0,135,0)">bytes</span>):
+<span class="ansi-green-fg">   1400</span>     content_or_path <span style="color: rgb(98,98,98)">=</span> BytesIO(content_or_path)
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1402</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> get_handle(
+<span class="ansi-green-fg">   1403</span>     content_or_path, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">rb</span><span style="color: rgb(175,0,0)">"</span>, storage_options<span style="color: rgb(98,98,98)">=</span>storage_options, is_text<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>
+<span class="ansi-green-fg">   1404</span> ) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> handle:
+<span class="ansi-green-fg">   1405</span>     stream <span style="color: rgb(98,98,98)">=</span> handle<span style="color: rgb(98,98,98)">.</span>handle
+<span class="ansi-green-fg">   1406</span>     stream<span style="color: rgb(98,98,98)">.</span>seek(<span style="color: rgb(98,98,98)">0</span>)
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:728</span>, in <span class="ansi-cyan-fg">get_handle</span><span class="ansi-blue-intense-fg ansi-bold">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="ansi-green-fg">    725</span>     codecs<span style="color: rgb(98,98,98)">.</span>lookup_error(errors)
+<span class="ansi-green-fg">    727</span> <span style="color: rgb(95,135,135)"># open URLs</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 728</span> ioargs <span style="color: rgb(98,98,98)">=</span> _get_filepath_or_buffer(
+<span class="ansi-green-fg">    729</span>     path_or_buf,
+<span class="ansi-green-fg">    730</span>     encoding<span style="color: rgb(98,98,98)">=</span>encoding,
+<span class="ansi-green-fg">    731</span>     compression<span style="color: rgb(98,98,98)">=</span>compression,
+<span class="ansi-green-fg">    732</span>     mode<span style="color: rgb(98,98,98)">=</span>mode,
+<span class="ansi-green-fg">    733</span>     storage_options<span style="color: rgb(98,98,98)">=</span>storage_options,
+<span class="ansi-green-fg">    734</span> )
+<span class="ansi-green-fg">    736</span> handle <span style="color: rgb(98,98,98)">=</span> ioargs<span style="color: rgb(98,98,98)">.</span>filepath_or_buffer
+<span class="ansi-green-fg">    737</span> handles: <span style="color: rgb(0,135,0)">list</span>[BaseBuffer]
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:384</span>, in <span class="ansi-cyan-fg">_get_filepath_or_buffer</span><span class="ansi-blue-intense-fg ansi-bold">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
+<span class="ansi-green-fg">    382</span> <span style="color: rgb(95,135,135)"># assuming storage_options is to be interpreted as headers</span>
+<span class="ansi-green-fg">    383</span> req_info <span style="color: rgb(98,98,98)">=</span> urllib<span style="color: rgb(98,98,98)">.</span>request<span style="color: rgb(98,98,98)">.</span>Request(filepath_or_buffer, headers<span style="color: rgb(98,98,98)">=</span>storage_options)
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 384</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> urlopen(req_info) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> req:
+<span class="ansi-green-fg">    385</span>     content_encoding <span style="color: rgb(98,98,98)">=</span> req<span style="color: rgb(98,98,98)">.</span>headers<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Content-Encoding</span><span style="color: rgb(175,0,0)">"</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
+<span class="ansi-green-fg">    386</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> content_encoding <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">gzip</span><span style="color: rgb(175,0,0)">"</span>:
+<span class="ansi-green-fg">    387</span>         <span style="color: rgb(95,135,135)"># Override compression based on Content-Encoding header</span>
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\site-packages\pandas\io\common.py:289</span>, in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(*args, **kwargs)</span>
+<span class="ansi-green-fg">    283</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-fg">    284</span> <span style="color: rgb(175,0,0)">Lazy-import wrapper for stdlib urlopen, as that imports a big chunk of</span>
+<span class="ansi-green-fg">    285</span> <span style="color: rgb(175,0,0)">the stdlib.</span>
+<span class="ansi-green-fg">    286</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-fg">    287</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,0,255)">urllib</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">request</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 289</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> urllib<span style="color: rgb(98,98,98)">.</span>request<span style="color: rgb(98,98,98)">.</span>urlopen(<span style="color: rgb(98,98,98)">*</span>args, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>kwargs)
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:215</span>, in <span class="ansi-cyan-fg">urlopen</span><span class="ansi-blue-intense-fg ansi-bold">(url, data, timeout, cafile, capath, cadefault, context)</span>
+<span class="ansi-green-fg">    213</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg">    214</span>     opener <span style="color: rgb(98,98,98)">=</span> _opener
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 215</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> opener<span style="color: rgb(98,98,98)">.</span>open(url, data, timeout)
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:521</span>, in <span class="ansi-cyan-fg">OpenerDirector.open</span><span class="ansi-blue-intense-fg ansi-bold">(self, fullurl, data, timeout)</span>
+<span class="ansi-green-fg">    519</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> processor <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>process_response<span style="color: rgb(98,98,98)">.</span>get(protocol, []):
+<span class="ansi-green-fg">    520</span>     meth <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(processor, meth_name)
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 521</span>     response <span style="color: rgb(98,98,98)">=</span> meth(req, response)
+<span class="ansi-green-fg">    523</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> response
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:630</span>, in <span class="ansi-cyan-fg">HTTPErrorProcessor.http_response</span><span class="ansi-blue-intense-fg ansi-bold">(self, request, response)</span>
+<span class="ansi-green-fg">    627</span> <span style="color: rgb(95,135,135)"># According to RFC 2616, "2xx" code indicates that the client's</span>
+<span class="ansi-green-fg">    628</span> <span style="color: rgb(95,135,135)"># request was successfully received, understood, and accepted.</span>
+<span class="ansi-green-fg">    629</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> (<span style="color: rgb(98,98,98)">200</span> <span style="color: rgb(98,98,98)">&lt;</span><span style="color: rgb(98,98,98)">=</span> code <span style="color: rgb(98,98,98)">&lt;</span> <span style="color: rgb(98,98,98)">300</span>):
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 630</span>     response <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>parent<span style="color: rgb(98,98,98)">.</span>error(
+<span class="ansi-green-fg">    631</span>         <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">http</span><span style="color: rgb(175,0,0)">'</span>, request, response, code, msg, hdrs)
+<span class="ansi-green-fg">    633</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> response
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:559</span>, in <span class="ansi-cyan-fg">OpenerDirector.error</span><span class="ansi-blue-intense-fg ansi-bold">(self, proto, *args)</span>
+<span class="ansi-green-fg">    557</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> http_err:
+<span class="ansi-green-fg">    558</span>     args <span style="color: rgb(98,98,98)">=</span> (<span style="color: rgb(0,135,0)">dict</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">default</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">http_error_default</span><span style="color: rgb(175,0,0)">'</span>) <span style="color: rgb(98,98,98)">+</span> orig_args
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 559</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_call_chain(<span style="color: rgb(98,98,98)">*</span>args)
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:492</span>, in <span class="ansi-cyan-fg">OpenerDirector._call_chain</span><span class="ansi-blue-intense-fg ansi-bold">(self, chain, kind, meth_name, *args)</span>
+<span class="ansi-green-fg">    490</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> handler <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> handlers:
+<span class="ansi-green-fg">    491</span>     func <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">getattr</span>(handler, meth_name)
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 492</span>     result <span style="color: rgb(98,98,98)">=</span> func(<span style="color: rgb(98,98,98)">*</span>args)
+<span class="ansi-green-fg">    493</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> result <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">    494</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> result
+
+File <span class="ansi-green-intense-fg ansi-bold">d:\anaconda3\Lib\urllib\request.py:639</span>, in <span class="ansi-cyan-fg">HTTPDefaultErrorHandler.http_error_default</span><span class="ansi-blue-intense-fg ansi-bold">(self, req, fp, code, msg, hdrs)</span>
+<span class="ansi-green-fg">    638</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span><span style="color: rgb(188,188,188)"> </span><span style="color: rgb(0,0,255)">http_error_default</span>(<span style="color: rgb(0,135,0)">self</span>, req, fp, code, msg, hdrs):
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 639</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> HTTPError(req<span style="color: rgb(98,98,98)">.</span>full_url, code, msg, hdrs, fp)
+
+<span class="ansi-red-intense-fg ansi-bold">HTTPError</span>: HTTP Error 404: Not Found</pre>
 </div>
 </div>
 </div>
@@ -7776,7 +7328,7 @@ Case5</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-22">
@@ -7824,30 +7376,17 @@ print(S)</div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>      A1得分  A1排名   A2得分  A2排名   A3得分  A3排名   综合得分  综合排名
-广州   67.67     2  63.56    15  86.40     1  68.57     2
-深圳   98.49     1  69.10    10  76.97     2  88.64     1
-珠海   43.79     8  71.75     6  41.30    13  50.75     7
-汕头   44.14     6  64.40    14  50.81     4  50.07    11
-韶关   40.75    13  89.27     2  43.19     9  53.54     5
-河源   40.01    21  47.50    21  40.00    19  41.94    21
-梅州   40.62    15  79.19     3  41.16    14  50.63     9
-惠州   41.48     9  60.31    16  41.31    12  46.33    17
-汕尾   40.19    19  70.54     9  43.02    10  48.32    13
-东莞   49.44     4  72.07     5  40.00    19  54.29     4
-中山   44.50     5  59.65    17  40.00    19  47.94    15
-江门   44.05     7  65.89    12  53.06     3  50.64     8
-佛山   59.82     3  70.97     7  49.11     5  61.58     3
-阳江   40.66    14  51.95    20  43.76     7  43.90    19
-湛江   40.97    11  65.47    13  41.12    15  47.32    16
-茂名   40.53    16  90.85     1  40.00    19  53.47     6
-肇庆   40.41    17  59.19    18  40.86    16  45.31    18
-清远   40.10    20  53.62    19  42.93    11  43.89    20
-潮州   41.36    10  66.23    11  43.20     8  47.97    14
-揭阳   40.87    12  78.12     4  40.29    17  50.43    10
-云浮   40.24    18  70.74     8  44.07     6  48.52    12
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[22], line 2</span>
+<span class="ansi-green-fg">      1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span><span style="color: rgb(188,188,188)"> </span><span style="color: rgb(0,0,255)">bz</span>(x):<span class="ansi-bold" style="color: rgb(0,135,0)">return</span> (x<span style="color: rgb(98,98,98)">-</span>x<span style="color: rgb(98,98,98)">.</span>min())<span style="color: rgb(98,98,98)">/</span>(x<span style="color: rgb(98,98,98)">.</span>max()<span style="color: rgb(98,98,98)">-</span>x<span style="color: rgb(98,98,98)">.</span>min())<span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">60</span><span style="color: rgb(98,98,98)">+</span><span style="color: rgb(98,98,98)">40</span>  
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span> Z<span style="color: rgb(98,98,98)">=</span>Case5<span style="color: rgb(98,98,98)">.</span>apply(bz,<span style="color: rgb(98,98,98)">0</span>)
+<span class="ansi-green-fg">      3</span> S<span style="color: rgb(98,98,98)">=</span>pd<span style="color: rgb(98,98,98)">.</span>DataFrame()
+<span class="ansi-green-fg">      4</span> S[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">A1得分</span><span style="color: rgb(175,0,0)">'</span>]<span style="color: rgb(98,98,98)">=</span>Z<span style="color: rgb(98,98,98)">.</span>iloc[:,<span style="color: rgb(98,98,98)">0</span>:<span style="color: rgb(98,98,98)">6</span>]<span style="color: rgb(98,98,98)">.</span>dot(B1_W)     <span style="color: rgb(95,135,135)">#A1得分 </span>
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'Case5' is not defined</pre>
 </div>
 </div>
 </div>
@@ -7859,7 +7398,7 @@ print(S)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-23">
@@ -7883,272 +7422,16 @@ print(S)</div>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[23], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> S
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>A1得分</th>
-<th>A1排名</th>
-<th>A2得分</th>
-<th>A2排名</th>
-<th>A3得分</th>
-<th>A3排名</th>
-<th>综合得分</th>
-<th>综合排名</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>广州</th>
-<td>67.67</td>
-<td>2</td>
-<td>63.56</td>
-<td>15</td>
-<td>86.40</td>
-<td>1</td>
-<td>68.57</td>
-<td>2</td>
-</tr>
-<tr>
-<th>深圳</th>
-<td>98.49</td>
-<td>1</td>
-<td>69.10</td>
-<td>10</td>
-<td>76.97</td>
-<td>2</td>
-<td>88.64</td>
-<td>1</td>
-</tr>
-<tr>
-<th>珠海</th>
-<td>43.79</td>
-<td>8</td>
-<td>71.75</td>
-<td>6</td>
-<td>41.30</td>
-<td>13</td>
-<td>50.75</td>
-<td>7</td>
-</tr>
-<tr>
-<th>汕头</th>
-<td>44.14</td>
-<td>6</td>
-<td>64.40</td>
-<td>14</td>
-<td>50.81</td>
-<td>4</td>
-<td>50.07</td>
-<td>11</td>
-</tr>
-<tr>
-<th>韶关</th>
-<td>40.75</td>
-<td>13</td>
-<td>89.27</td>
-<td>2</td>
-<td>43.19</td>
-<td>9</td>
-<td>53.54</td>
-<td>5</td>
-</tr>
-<tr>
-<th>河源</th>
-<td>40.01</td>
-<td>21</td>
-<td>47.50</td>
-<td>21</td>
-<td>40.00</td>
-<td>19</td>
-<td>41.94</td>
-<td>21</td>
-</tr>
-<tr>
-<th>梅州</th>
-<td>40.62</td>
-<td>15</td>
-<td>79.19</td>
-<td>3</td>
-<td>41.16</td>
-<td>14</td>
-<td>50.63</td>
-<td>9</td>
-</tr>
-<tr>
-<th>惠州</th>
-<td>41.48</td>
-<td>9</td>
-<td>60.31</td>
-<td>16</td>
-<td>41.31</td>
-<td>12</td>
-<td>46.33</td>
-<td>17</td>
-</tr>
-<tr>
-<th>汕尾</th>
-<td>40.19</td>
-<td>19</td>
-<td>70.54</td>
-<td>9</td>
-<td>43.02</td>
-<td>10</td>
-<td>48.32</td>
-<td>13</td>
-</tr>
-<tr>
-<th>东莞</th>
-<td>49.44</td>
-<td>4</td>
-<td>72.07</td>
-<td>5</td>
-<td>40.00</td>
-<td>19</td>
-<td>54.29</td>
-<td>4</td>
-</tr>
-<tr>
-<th>中山</th>
-<td>44.50</td>
-<td>5</td>
-<td>59.65</td>
-<td>17</td>
-<td>40.00</td>
-<td>19</td>
-<td>47.94</td>
-<td>15</td>
-</tr>
-<tr>
-<th>江门</th>
-<td>44.05</td>
-<td>7</td>
-<td>65.89</td>
-<td>12</td>
-<td>53.06</td>
-<td>3</td>
-<td>50.64</td>
-<td>8</td>
-</tr>
-<tr>
-<th>佛山</th>
-<td>59.82</td>
-<td>3</td>
-<td>70.97</td>
-<td>7</td>
-<td>49.11</td>
-<td>5</td>
-<td>61.58</td>
-<td>3</td>
-</tr>
-<tr>
-<th>阳江</th>
-<td>40.66</td>
-<td>14</td>
-<td>51.95</td>
-<td>20</td>
-<td>43.76</td>
-<td>7</td>
-<td>43.90</td>
-<td>19</td>
-</tr>
-<tr>
-<th>湛江</th>
-<td>40.97</td>
-<td>11</td>
-<td>65.47</td>
-<td>13</td>
-<td>41.12</td>
-<td>15</td>
-<td>47.32</td>
-<td>16</td>
-</tr>
-<tr>
-<th>茂名</th>
-<td>40.53</td>
-<td>16</td>
-<td>90.85</td>
-<td>1</td>
-<td>40.00</td>
-<td>19</td>
-<td>53.47</td>
-<td>6</td>
-</tr>
-<tr>
-<th>肇庆</th>
-<td>40.41</td>
-<td>17</td>
-<td>59.19</td>
-<td>18</td>
-<td>40.86</td>
-<td>16</td>
-<td>45.31</td>
-<td>18</td>
-</tr>
-<tr>
-<th>清远</th>
-<td>40.10</td>
-<td>20</td>
-<td>53.62</td>
-<td>19</td>
-<td>42.93</td>
-<td>11</td>
-<td>43.89</td>
-<td>20</td>
-</tr>
-<tr>
-<th>潮州</th>
-<td>41.36</td>
-<td>10</td>
-<td>66.23</td>
-<td>11</td>
-<td>43.20</td>
-<td>8</td>
-<td>47.97</td>
-<td>14</td>
-</tr>
-<tr>
-<th>揭阳</th>
-<td>40.87</td>
-<td>12</td>
-<td>78.12</td>
-<td>4</td>
-<td>40.29</td>
-<td>17</td>
-<td>50.43</td>
-<td>10</td>
-</tr>
-<tr>
-<th>云浮</th>
-<td>40.24</td>
-<td>18</td>
-<td>70.74</td>
-<td>8</td>
-<td>44.07</td>
-<td>6</td>
-<td>48.52</td>
-<td>12</td>
-</tr>
-</tbody>
-</table>
-</div>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name 'S' is not defined</pre>
 </div>
 </div>
 </div>
@@ -8209,7 +7492,7 @@ print(S)</div>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 18, 2026 09:56:29 UTC">June 18, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 18, 2026 09:59:54 UTC">June 18, 2026</span>
   </span>
 
     
